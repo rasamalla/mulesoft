@@ -1,0 +1,377 @@
+2020-05-01 18:49:25,312 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'flowvariable'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 18:49:25,734 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-01 18:49:25,749 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-01 18:49:25,906 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-01 18:49:26,077 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-01 18:49:26,077 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-01 18:49:26,379 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@d78795: startup date [Fri May 01 18:49:26 IST 2020]; root of context hierarchy
+2020-05-01 18:49:28,488 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 18:49:29,715 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-05-01 18:49:30,224 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\flowvariable\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\flowvariable\queue-tx-log\tx2.log
+2020-05-01 18:49:30,255 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\flowvariable\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\flowvariable\queue-xa-tx-log\tx2.log
+2020-05-01 18:49:30,396 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-01 18:49:30,396 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flowvariableFlow
+2020-05-01 18:49:30,396 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@609e57da
+2020-05-01 18:49:30,443 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flowvariableFlow.stage1
+2020-05-01 18:49:30,474 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flowvariableFlow1
+2020-05-01 18:49:30,474 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3b4a1a75
+2020-05-01 18:49:30,474 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flowvariableFlow1.stage1
+2020-05-01 18:49:30,474 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flowvariableFlow2
+2020-05-01 18:49:30,474 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@52b46d52
+2020-05-01 18:49:30,490 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flowvariableFlow2.stage1
+2020-05-01 18:49:31,083 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\flowvariable\flowvariable.xml'}]"
+2020-05-01 18:49:31,083 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\flowvariable\flowvariable.xml'}]"
+2020-05-01 18:49:31,100 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-05-01 18:49:31,100 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'flowvariable'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 18:49:31,132 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-01 18:49:31,132 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-01 18:49:31,225 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:6524
+2020-05-01 18:49:31,241 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:7896
+2020-05-01 18:49:31,256 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-01 18:49:31,256 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flowvariableFlow
+2020-05-01 18:49:31,256 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flowvariableFlow.stage1
+2020-05-01 18:49:31,256 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flowvariableFlow1
+2020-05-01 18:49:31,256 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flowvariableFlow1.stage1
+2020-05-01 18:49:31,256 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flowvariableFlow2
+2020-05-01 18:49:31,256 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flowvariableFlow2.stage1
+2020-05-01 18:49:31,319 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-01 18:49:31,475 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: flowvariable                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-01 18:53:13,137 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 18:53:13,219 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 18:53:56,984 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 18:53:56,987 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 18:54:33,676 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 18:54:33,678 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:00:57,767 [[flowvariable].HTTP_Listener_Configuration1.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http***********
+2020-05-01 19:00:57,778 [[flowvariable].HTTP_Listener_Configuration1.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - *********Received Request from Subflow************
+2020-05-01 19:00:57,796 [[flowvariable].HTTP_Listener_Configuration1.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - *******In Subflow SetPayload is************************ITJOB
+2020-05-01 19:00:57,801 [[flowvariable].HTTP_Listener_Configuration1.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - *****After PrivateFlow**********ITJOB
+2020-05-01 19:09:19,962 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:09:19,964 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:09:47,563 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:09:47,564 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:12:09,448 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:12:09,451 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:12:37,982 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:12:37,983 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:12:39,866 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:12:39,868 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:12:51,469 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:12:51,470 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:12:52,877 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:12:52,879 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:12:53,998 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:12:53,999 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:13:21,866 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:13:21,867 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:13:23,233 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:13:23,234 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:13:30,602 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:13:30,603 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:13:32,046 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:13:32,047 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:13:40,622 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:13:40,623 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:26:14,857 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:26:14,859 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:26:57,218 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:26:57,220 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:26:58,560 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:26:58,561 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:28:01,219 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:28:01,221 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:28:33,508 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:28:33,509 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:28:43,194 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:28:43,196 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:28:44,933 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:28:44,936 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:28:57,539 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:28:57,539 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:30:36,983 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:30:36,985 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:30:42,588 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:30:42,589 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:31:56,232 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:31:56,234 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:32:23,145 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:32:23,147 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:37:02,732 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:37:02,732 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::bangalore
+2020-05-01 19:38:22,631 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:38:22,634 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::hyderabad
+2020-05-01 19:38:32,623 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:38:32,625 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::bangalore
+2020-05-01 19:39:00,612 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'flowvariable'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 19:39:00,654 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: flowvariableFlow
+2020-05-01 19:39:00,659 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: flowvariableFlow.stage1
+2020-05-01 19:39:00,804 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: flowvariableFlow1
+2020-05-01 19:39:00,804 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: flowvariableFlow1.stage1
+2020-05-01 19:39:01,001 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: flowvariableFlow2
+2020-05-01 19:39:01,001 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: flowvariableFlow2.stage1
+2020-05-01 19:39:01,206 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-01 19:39:01,253 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:6524
+2020-05-01 19:39:01,258 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:7896
+2020-05-01 19:39:01,264 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-01 19:39:01,264 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-01 19:39:01,300 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'flowvariable'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 19:39:01,303 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-01 19:39:01,306 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: flowvariableFlow
+2020-05-01 19:39:01,307 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: flowvariableFlow.stage1
+2020-05-01 19:39:01,312 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: flowvariableFlow1
+2020-05-01 19:39:01,312 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: flowvariableFlow1.stage1
+2020-05-01 19:39:01,315 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: flowvariableFlow2
+2020-05-01 19:39:01,316 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: flowvariableFlow2.stage1
+2020-05-01 19:39:01,321 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-01 19:39:01,670 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@d78795: startup date [Fri May 01 18:49:26 IST 2020]; root of context hierarchy
+2020-05-01 19:39:01,685 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "flowvariable" shut down normally on: 1/5/20 7:39 PM   *
+* Up for: 0 days, 0 hours, 49 mins, 30.580 sec                       *
+**********************************************************************
+2020-05-01 19:39:02,082 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'flowvariable'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 19:39:02,094 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-01 19:39:02,099 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-01 19:39:02,110 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-01 19:39:02,141 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-01 19:39:02,149 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-01 19:39:02,163 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@75ee2727: startup date [Fri May 01 19:39:02 IST 2020]; root of context hierarchy
+2020-05-01 19:39:02,707 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 19:39:02,973 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\flowvariable\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\flowvariable\queue-tx-log\tx2.log
+2020-05-01 19:39:02,975 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\flowvariable\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\flowvariable\queue-xa-tx-log\tx2.log
+2020-05-01 19:39:02,990 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-01 19:39:02,993 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flowvariableFlow
+2020-05-01 19:39:02,996 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@17c71307
+2020-05-01 19:39:03,005 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flowvariableFlow.stage1
+2020-05-01 19:39:03,006 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flowvariableFlow1
+2020-05-01 19:39:03,006 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4c012e4e
+2020-05-01 19:39:03,015 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flowvariableFlow1.stage1
+2020-05-01 19:39:03,017 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flowvariableFlow2
+2020-05-01 19:39:03,017 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5c2134bd
+2020-05-01 19:39:03,024 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flowvariableFlow2.stage1
+2020-05-01 19:39:03,074 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\flowvariable\flowvariable.xml'}]"
+2020-05-01 19:39:03,074 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\flowvariable\flowvariable.xml'}]"
+2020-05-01 19:39:03,076 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'flowvariable'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 19:39:03,081 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-01 19:39:03,087 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-01 19:39:03,114 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:6524
+2020-05-01 19:39:03,133 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:7896
+2020-05-01 19:39:03,142 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-01 19:39:03,143 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flowvariableFlow
+2020-05-01 19:39:03,146 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flowvariableFlow.stage1
+2020-05-01 19:39:03,155 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flowvariableFlow1
+2020-05-01 19:39:03,156 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flowvariableFlow1.stage1
+2020-05-01 19:39:03,163 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flowvariableFlow2
+2020-05-01 19:39:03,163 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flowvariableFlow2.stage1
+2020-05-01 19:39:03,184 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-01 19:39:03,189 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: flowvariable                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-01 19:39:11,113 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:39:11,262 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:39:43,245 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'flowvariable'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 19:39:43,249 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: flowvariableFlow
+2020-05-01 19:39:43,249 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: flowvariableFlow.stage1
+2020-05-01 19:39:43,321 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: flowvariableFlow1
+2020-05-01 19:39:43,321 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: flowvariableFlow1.stage1
+2020-05-01 19:39:43,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: flowvariableFlow2
+2020-05-01 19:39:43,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: flowvariableFlow2.stage1
+2020-05-01 19:39:43,732 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-01 19:39:43,747 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:6524
+2020-05-01 19:39:43,749 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:7896
+2020-05-01 19:39:43,751 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-01 19:39:43,751 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-01 19:39:43,764 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'flowvariable'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 19:39:43,765 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-01 19:39:43,768 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: flowvariableFlow
+2020-05-01 19:39:43,768 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: flowvariableFlow.stage1
+2020-05-01 19:39:43,768 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: flowvariableFlow1
+2020-05-01 19:39:43,768 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: flowvariableFlow1.stage1
+2020-05-01 19:39:43,768 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: flowvariableFlow2
+2020-05-01 19:39:43,769 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: flowvariableFlow2.stage1
+2020-05-01 19:39:43,770 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-01 19:39:43,827 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@75ee2727: startup date [Fri May 01 19:39:02 IST 2020]; root of context hierarchy
+2020-05-01 19:39:43,838 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "flowvariable" shut down normally on: 1/5/20 7:39 PM   *
+* Up for: 0 days, 0 hours, 0 mins, 40.761 sec                        *
+**********************************************************************
+2020-05-01 19:39:43,946 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'flowvariable'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 19:39:43,957 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-01 19:39:43,961 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-01 19:39:43,968 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-01 19:39:43,996 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-01 19:39:43,996 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-01 19:39:44,007 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@16d97efe: startup date [Fri May 01 19:39:44 IST 2020]; root of context hierarchy
+2020-05-01 19:39:44,526 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 19:39:44,708 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\flowvariable\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\flowvariable\queue-tx-log\tx2.log
+2020-05-01 19:39:44,710 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\flowvariable\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\flowvariable\queue-xa-tx-log\tx2.log
+2020-05-01 19:39:44,711 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-01 19:39:44,726 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flowvariableFlow
+2020-05-01 19:39:44,726 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@8211a66
+2020-05-01 19:39:44,735 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flowvariableFlow.stage1
+2020-05-01 19:39:44,736 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flowvariableFlow1
+2020-05-01 19:39:44,736 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7c03e525
+2020-05-01 19:39:44,745 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flowvariableFlow1.stage1
+2020-05-01 19:39:44,746 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flowvariableFlow2
+2020-05-01 19:39:44,747 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@42197091
+2020-05-01 19:39:44,755 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flowvariableFlow2.stage1
+2020-05-01 19:39:44,797 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\flowvariable\flowvariable.xml'}]"
+2020-05-01 19:39:44,797 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\flowvariable\flowvariable.xml'}]"
+2020-05-01 19:39:44,799 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'flowvariable'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 19:39:44,801 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-01 19:39:44,801 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-01 19:39:44,825 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:6524
+2020-05-01 19:39:44,848 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:7896
+2020-05-01 19:39:44,856 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-01 19:39:44,861 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flowvariableFlow
+2020-05-01 19:39:44,861 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flowvariableFlow.stage1
+2020-05-01 19:39:44,863 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flowvariableFlow1
+2020-05-01 19:39:44,868 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flowvariableFlow1.stage1
+2020-05-01 19:39:44,873 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flowvariableFlow2
+2020-05-01 19:39:44,873 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flowvariableFlow2.stage1
+2020-05-01 19:39:44,898 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-01 19:39:44,940 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: flowvariable                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-01 19:39:55,738 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:39:55,863 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::null
+2020-05-01 19:40:14,982 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'flowvariable'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 19:40:14,987 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: flowvariableFlow
+2020-05-01 19:40:14,987 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: flowvariableFlow.stage1
+2020-05-01 19:40:15,172 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: flowvariableFlow1
+2020-05-01 19:40:15,173 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: flowvariableFlow1.stage1
+2020-05-01 19:40:15,376 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: flowvariableFlow2
+2020-05-01 19:40:15,376 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: flowvariableFlow2.stage1
+2020-05-01 19:40:15,580 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-01 19:40:15,586 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:6524
+2020-05-01 19:40:15,587 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:7896
+2020-05-01 19:40:15,588 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-01 19:40:15,588 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-01 19:40:15,591 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'flowvariable'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 19:40:15,592 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-01 19:40:15,592 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: flowvariableFlow
+2020-05-01 19:40:15,592 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: flowvariableFlow.stage1
+2020-05-01 19:40:15,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: flowvariableFlow1
+2020-05-01 19:40:15,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: flowvariableFlow1.stage1
+2020-05-01 19:40:15,594 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: flowvariableFlow2
+2020-05-01 19:40:15,594 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: flowvariableFlow2.stage1
+2020-05-01 19:40:15,597 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-01 19:40:15,630 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@16d97efe: startup date [Fri May 01 19:39:44 IST 2020]; root of context hierarchy
+2020-05-01 19:40:15,637 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "flowvariable" shut down normally on: 1/5/20 7:40 PM   *
+* Up for: 0 days, 0 hours, 0 mins, 30.837 sec                        *
+**********************************************************************
+2020-05-01 19:40:15,783 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'flowvariable'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 19:40:15,789 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-01 19:40:15,797 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-01 19:40:15,804 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-01 19:40:15,830 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-01 19:40:15,830 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-01 19:40:15,843 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4323da31: startup date [Fri May 01 19:40:15 IST 2020]; root of context hierarchy
+2020-05-01 19:40:16,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 19:40:16,641 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\flowvariable\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\flowvariable\queue-tx-log\tx2.log
+2020-05-01 19:40:16,643 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\flowvariable\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\flowvariable\queue-xa-tx-log\tx2.log
+2020-05-01 19:40:16,670 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-01 19:40:16,673 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flowvariableFlow
+2020-05-01 19:40:16,676 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@f88f110
+2020-05-01 19:40:16,685 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flowvariableFlow.stage1
+2020-05-01 19:40:16,686 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flowvariableFlow1
+2020-05-01 19:40:16,688 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6901655a
+2020-05-01 19:40:16,704 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flowvariableFlow1.stage1
+2020-05-01 19:40:16,704 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: flowvariableFlow2
+2020-05-01 19:40:16,709 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6b41a943
+2020-05-01 19:40:16,721 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: flowvariableFlow2.stage1
+2020-05-01 19:40:16,750 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\flowvariable\flowvariable.xml'}]"
+2020-05-01 19:40:16,750 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\flowvariable\flowvariable.xml'}]"
+2020-05-01 19:40:16,753 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'flowvariable'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 19:40:16,756 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-01 19:40:16,756 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-01 19:40:16,782 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:6524
+2020-05-01 19:40:16,790 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:7896
+2020-05-01 19:40:16,801 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-01 19:40:16,805 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flowvariableFlow
+2020-05-01 19:40:16,806 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flowvariableFlow.stage1
+2020-05-01 19:40:16,810 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flowvariableFlow1
+2020-05-01 19:40:16,810 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flowvariableFlow1.stage1
+2020-05-01 19:40:16,827 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: flowvariableFlow2
+2020-05-01 19:40:16,838 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: flowvariableFlow2.stage1
+2020-05-01 19:40:16,866 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-01 19:40:16,873 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: flowvariable                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-01 19:40:31,554 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ********After Http*************Request is::::::::::::
+2020-05-01 19:40:31,640 [[flowvariable].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - ***********AFter Setpayload is:::::::::bangalore
