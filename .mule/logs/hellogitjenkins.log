@@ -1,0 +1,768 @@
+2020-05-01 15:32:11,151 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'hellogitjenkins'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:32:11,632 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-01 15:32:11,645 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-01 15:32:11,828 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-01 15:32:12,082 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-01 15:32:12,082 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-01 15:32:12,444 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@64da2a7: startup date [Fri May 01 15:32:12 IST 2020]; root of context hierarchy
+2020-05-01 15:32:14,327 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 15:32:15,553 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-05-01 15:32:16,156 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx2.log
+2020-05-01 15:32:16,181 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx2.log
+2020-05-01 15:32:16,338 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-01 15:32:16,338 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: hellogitjenkinsFlow
+2020-05-01 15:32:16,338 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@465b38e6
+2020-05-01 15:32:16,403 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: hellogitjenkinsFlow.stage1
+2020-05-01 15:32:16,946 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:32:16,946 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:32:16,956 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-05-01 15:32:16,956 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:32:16,989 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-01 15:32:16,989 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-01 15:32:17,079 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081/hello
+2020-05-01 15:32:17,084 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-01 15:32:17,084 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: hellogitjenkinsFlow
+2020-05-01 15:32:17,084 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: hellogitjenkinsFlow.stage1
+2020-05-01 15:32:17,162 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-01 15:32:17,355 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: hellogitjenkins                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-01 15:33:37,575 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:33:37,585 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: hellogitjenkinsFlow
+2020-05-01 15:33:37,589 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: hellogitjenkinsFlow.stage1
+2020-05-01 15:33:37,747 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-01 15:33:37,800 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://localhost:8081/hello
+2020-05-01 15:33:37,804 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-01 15:33:37,805 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-01 15:33:37,814 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'hellogitjenkins'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:33:37,817 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-01 15:33:37,819 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: hellogitjenkinsFlow
+2020-05-01 15:33:37,820 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: hellogitjenkinsFlow.stage1
+2020-05-01 15:33:37,826 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-01 15:33:38,016 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@64da2a7: startup date [Fri May 01 15:32:12 IST 2020]; root of context hierarchy
+2020-05-01 15:33:38,027 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "hellogitjenkins" shut down normally on: 1/5/20 3:33   *
+* PM                                                                 *
+* Up for: 0 days, 0 hours, 1 mins, 21.67 sec                         *
+**********************************************************************
+2020-05-01 15:33:38,312 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'hellogitjenkins'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:33:38,324 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-01 15:33:38,329 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-01 15:33:38,335 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-01 15:33:38,358 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-01 15:33:38,360 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-01 15:33:38,365 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@346cf4ba: startup date [Fri May 01 15:33:38 IST 2020]; root of context hierarchy
+2020-05-01 15:33:39,065 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 15:33:39,281 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx2.log
+2020-05-01 15:33:39,284 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx2.log
+2020-05-01 15:33:39,304 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-01 15:33:39,307 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: hellogitjenkinsFlow
+2020-05-01 15:33:39,307 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3294faac
+2020-05-01 15:33:39,314 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: hellogitjenkinsFlow.stage1
+2020-05-01 15:33:39,363 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:33:39,363 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:33:39,368 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:33:39,377 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-01 15:33:39,377 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-01 15:33:39,392 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081/hello
+2020-05-01 15:33:39,398 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-01 15:33:39,399 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: hellogitjenkinsFlow
+2020-05-01 15:33:39,401 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: hellogitjenkinsFlow.stage1
+2020-05-01 15:33:39,423 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-01 15:33:39,457 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: hellogitjenkins                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-01 15:34:12,910 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/hello//hellogitjenkins
+2020-05-01 15:34:12,910 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([get])/hello/hellogitjenkins/]
+2020-05-01 15:34:28,402 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - """"""""""""""""flow has started""""""""""""""""""""
+2020-05-01 15:34:28,495 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - __________________SubFlow-----------------------
+2020-05-01 15:35:34,662 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:35:34,663 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: hellogitjenkinsFlow
+2020-05-01 15:35:34,664 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: hellogitjenkinsFlow.stage1
+2020-05-01 15:35:34,790 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-01 15:35:34,808 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://localhost:8081/hello
+2020-05-01 15:35:34,810 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-01 15:35:34,810 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-01 15:35:34,824 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'hellogitjenkins'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:35:34,826 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-01 15:35:34,829 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: hellogitjenkinsFlow
+2020-05-01 15:35:34,829 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: hellogitjenkinsFlow.stage1
+2020-05-01 15:35:34,840 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-01 15:35:34,908 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@346cf4ba: startup date [Fri May 01 15:33:38 IST 2020]; root of context hierarchy
+2020-05-01 15:35:34,934 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "hellogitjenkins" shut down normally on: 1/5/20 3:35   *
+* PM                                                                 *
+* Up for: 0 days, 0 hours, 1 mins, 55.563 sec                        *
+**********************************************************************
+2020-05-01 15:35:35,123 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'hellogitjenkins'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:35:35,138 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-01 15:35:35,140 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-01 15:35:35,155 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-01 15:35:35,174 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-01 15:35:35,174 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-01 15:35:35,183 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@1bef39aa: startup date [Fri May 01 15:35:35 IST 2020]; root of context hierarchy
+2020-05-01 15:35:35,501 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 15:35:35,636 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx2.log
+2020-05-01 15:35:35,637 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx2.log
+2020-05-01 15:35:35,639 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-01 15:35:35,653 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: hellogitjenkinsFlow
+2020-05-01 15:35:35,654 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@d30623c
+2020-05-01 15:35:35,659 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: hellogitjenkinsFlow.stage1
+2020-05-01 15:35:35,691 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:35:35,691 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:35:35,696 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:35:35,700 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-01 15:35:35,705 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-01 15:35:35,719 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081/hello
+2020-05-01 15:35:35,722 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-01 15:35:35,726 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: hellogitjenkinsFlow
+2020-05-01 15:35:35,726 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: hellogitjenkinsFlow.stage1
+2020-05-01 15:35:35,741 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-01 15:35:35,747 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: hellogitjenkins                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-01 15:35:40,311 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - """"""""""""""""flow has started""""""""""""""""""""
+2020-05-01 15:35:40,416 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - __________________SubFlow-----------------------
+2020-05-01 15:36:45,876 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:36:45,882 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: hellogitjenkinsFlow
+2020-05-01 15:36:45,884 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: hellogitjenkinsFlow.stage1
+2020-05-01 15:36:46,089 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-01 15:36:46,098 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://localhost:8081/hello
+2020-05-01 15:36:46,099 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-01 15:36:46,099 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-01 15:36:46,107 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'hellogitjenkins'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:36:46,107 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-01 15:36:46,108 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: hellogitjenkinsFlow
+2020-05-01 15:36:46,108 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: hellogitjenkinsFlow.stage1
+2020-05-01 15:36:46,112 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-01 15:36:46,139 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@1bef39aa: startup date [Fri May 01 15:35:35 IST 2020]; root of context hierarchy
+2020-05-01 15:36:46,154 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "hellogitjenkins" shut down normally on: 1/5/20 3:36   *
+* PM                                                                 *
+* Up for: 0 days, 0 hours, 1 mins, 10.457 sec                        *
+**********************************************************************
+2020-05-01 15:36:46,277 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'hellogitjenkins'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:36:46,290 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-01 15:36:46,298 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-01 15:36:46,304 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-01 15:36:46,323 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-01 15:36:46,323 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-01 15:36:46,339 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@551966cb: startup date [Fri May 01 15:36:46 IST 2020]; root of context hierarchy
+2020-05-01 15:36:46,888 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 15:36:47,058 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx2.log
+2020-05-01 15:36:47,060 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx2.log
+2020-05-01 15:36:47,072 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-01 15:36:47,075 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: hellogitjenkinsFlow
+2020-05-01 15:36:47,075 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@a681b62
+2020-05-01 15:36:47,080 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: hellogitjenkinsFlow.stage1
+2020-05-01 15:36:47,115 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:36:47,115 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:36:47,119 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:36:47,123 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-01 15:36:47,134 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-01 15:36:47,147 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081/hello
+2020-05-01 15:36:47,154 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-01 15:36:47,157 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: hellogitjenkinsFlow
+2020-05-01 15:36:47,157 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: hellogitjenkinsFlow.stage1
+2020-05-01 15:36:47,171 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-01 15:36:47,182 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: hellogitjenkins                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-01 15:36:51,099 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - """"""""""""""""flow has started""""""""""""""""""""
+2020-05-01 15:36:51,256 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - __________________SubFlow-----------------------
+2020-05-01 15:38:17,379 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:38:17,387 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: hellogitjenkinsFlow
+2020-05-01 15:38:17,388 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: hellogitjenkinsFlow.stage1
+2020-05-01 15:38:17,592 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-01 15:38:17,609 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://localhost:8081/hello
+2020-05-01 15:38:17,612 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-01 15:38:17,612 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-01 15:38:17,622 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'hellogitjenkins'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:38:17,622 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-01 15:38:17,626 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: hellogitjenkinsFlow
+2020-05-01 15:38:17,626 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: hellogitjenkinsFlow.stage1
+2020-05-01 15:38:17,629 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-01 15:38:17,690 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@551966cb: startup date [Fri May 01 15:36:46 IST 2020]; root of context hierarchy
+2020-05-01 15:38:17,708 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "hellogitjenkins" shut down normally on: 1/5/20 3:38   *
+* PM                                                                 *
+* Up for: 0 days, 0 hours, 1 mins, 30.588 sec                        *
+**********************************************************************
+2020-05-01 15:38:17,791 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'hellogitjenkins'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:38:17,798 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-01 15:38:17,801 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-01 15:38:17,806 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-01 15:38:17,942 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-01 15:38:17,944 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-01 15:38:17,946 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@19408166: startup date [Fri May 01 15:38:17 IST 2020]; root of context hierarchy
+2020-05-01 15:38:18,225 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 15:38:18,385 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx2.log
+2020-05-01 15:38:18,388 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx2.log
+2020-05-01 15:38:18,399 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-01 15:38:18,401 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: hellogitjenkinsFlow
+2020-05-01 15:38:18,401 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@775dbd5a
+2020-05-01 15:38:18,410 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: hellogitjenkinsFlow.stage1
+2020-05-01 15:38:18,441 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:38:18,442 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:38:18,443 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:38:18,445 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-01 15:38:18,445 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-01 15:38:18,460 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081/hello
+2020-05-01 15:38:18,462 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-01 15:38:18,467 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: hellogitjenkinsFlow
+2020-05-01 15:38:18,467 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: hellogitjenkinsFlow.stage1
+2020-05-01 15:38:18,488 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-01 15:38:18,494 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: hellogitjenkins                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-01 15:38:23,499 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - """"""""""""""""flow has started""""""""""""""""""""
+2020-05-01 15:38:23,621 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - __________________SubFlow-----------------------null
+2020-05-01 15:38:58,006 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - """"""""""""""""flow has started""""""""""""""""""""
+2020-05-01 15:38:58,009 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - __________________SubFlow-----------------------null
+2020-05-01 15:44:04,358 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:44:04,365 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: hellogitjenkinsFlow
+2020-05-01 15:44:04,365 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: hellogitjenkinsFlow.stage1
+2020-05-01 15:44:04,392 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-01 15:44:04,402 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://localhost:8081/hello
+2020-05-01 15:44:04,406 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-01 15:44:04,407 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-01 15:44:04,412 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'hellogitjenkins'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:44:04,412 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-01 15:44:04,415 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: hellogitjenkinsFlow
+2020-05-01 15:44:04,415 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: hellogitjenkinsFlow.stage1
+2020-05-01 15:44:04,417 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-01 15:44:04,447 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@19408166: startup date [Fri May 01 15:38:17 IST 2020]; root of context hierarchy
+2020-05-01 15:44:04,452 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "hellogitjenkins" shut down normally on: 1/5/20 3:44   *
+* PM                                                                 *
+* Up for: 0 days, 0 hours, 5 mins, 46.8 sec                          *
+**********************************************************************
+2020-05-01 15:44:04,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'hellogitjenkins'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:44:04,529 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-01 15:44:04,533 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-01 15:44:04,538 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-01 15:44:04,558 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-01 15:44:04,564 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-01 15:44:04,574 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@1c5c0150: startup date [Fri May 01 15:44:04 IST 2020]; root of context hierarchy
+2020-05-01 15:44:04,874 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 15:44:04,996 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx2.log
+2020-05-01 15:44:05,014 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx2.log
+2020-05-01 15:44:05,033 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-01 15:44:05,034 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: hellogitjenkinsFlow
+2020-05-01 15:44:05,034 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4a36fe60
+2020-05-01 15:44:05,044 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: hellogitjenkinsFlow.stage1
+2020-05-01 15:44:05,093 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:44:05,094 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:44:05,095 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:44:05,110 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-01 15:44:05,111 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-01 15:44:05,132 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081/hello
+2020-05-01 15:44:05,137 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-01 15:44:05,144 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: hellogitjenkinsFlow
+2020-05-01 15:44:05,145 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: hellogitjenkinsFlow.stage1
+2020-05-01 15:44:05,184 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-01 15:44:05,275 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: hellogitjenkins                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-01 15:44:10,294 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - """"""""""""""""flow has started""""""""""""""""""""
+2020-05-01 15:44:10,389 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - __________________SubFlow-----------------------null
+2020-05-01 15:44:59,806 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - """"""""""""""""flow has started""""""""""""""""""""
+2020-05-01 15:44:59,807 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - __________________SubFlow-----------------------null
+2020-05-01 15:45:06,206 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - """"""""""""""""flow has started""""""""""""""""""""
+2020-05-01 15:45:06,207 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - __________________SubFlow-----------------------null
+2020-05-01 15:45:58,245 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'hellogitjenkins'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:45:58,613 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-01 15:45:58,631 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-01 15:45:58,810 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-01 15:45:58,983 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-01 15:45:58,983 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-01 15:45:59,283 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@d78795: startup date [Fri May 01 15:45:59 IST 2020]; root of context hierarchy
+2020-05-01 15:46:01,175 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 15:46:02,456 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-05-01 15:46:02,896 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx2.log
+2020-05-01 15:46:02,927 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx2.log
+2020-05-01 15:46:03,076 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-01 15:46:03,082 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: hellogitjenkinsFlow
+2020-05-01 15:46:03,083 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1015a4b9
+2020-05-01 15:46:03,140 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: hellogitjenkinsFlow.stage1
+2020-05-01 15:46:03,733 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:46:03,733 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:46:03,744 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-05-01 15:46:03,744 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:46:03,761 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-01 15:46:03,761 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-01 15:46:03,804 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081/hello
+2020-05-01 15:46:03,808 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-01 15:46:03,811 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: hellogitjenkinsFlow
+2020-05-01 15:46:03,811 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: hellogitjenkinsFlow.stage1
+2020-05-01 15:46:03,878 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-01 15:46:03,939 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: hellogitjenkins                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-01 15:46:19,411 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - """"""""""""""""flow has started""""""""""""""""""""
+2020-05-01 15:46:19,524 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - __________________SubFlow-----------------------null
+2020-05-01 15:49:04,400 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:49:04,403 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: hellogitjenkinsFlow
+2020-05-01 15:49:04,409 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: hellogitjenkinsFlow.stage1
+2020-05-01 15:49:04,481 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-01 15:49:04,496 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://localhost:8081/hello
+2020-05-01 15:49:04,500 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-01 15:49:04,500 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-01 15:49:04,515 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'hellogitjenkins'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:49:04,516 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-01 15:49:04,519 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: hellogitjenkinsFlow
+2020-05-01 15:49:04,519 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: hellogitjenkinsFlow.stage1
+2020-05-01 15:49:04,534 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-01 15:49:04,935 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@d78795: startup date [Fri May 01 15:45:59 IST 2020]; root of context hierarchy
+2020-05-01 15:49:04,951 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "hellogitjenkins" shut down normally on: 1/5/20 3:49   *
+* PM                                                                 *
+* Up for: 0 days, 0 hours, 3 mins, 1.206 sec                         *
+**********************************************************************
+2020-05-01 15:49:05,111 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'hellogitjenkins'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:49:05,119 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-01 15:49:05,124 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-01 15:49:05,130 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-01 15:49:05,153 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-01 15:49:05,153 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-01 15:49:05,158 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@46146526: startup date [Fri May 01 15:49:05 IST 2020]; root of context hierarchy
+2020-05-01 15:49:05,575 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 15:49:05,813 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx2.log
+2020-05-01 15:49:05,814 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx2.log
+2020-05-01 15:49:05,831 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-01 15:49:05,836 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: hellogitjenkinsFlow
+2020-05-01 15:49:05,836 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@503dd5e1
+2020-05-01 15:49:05,849 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: hellogitjenkinsFlow.stage1
+2020-05-01 15:49:05,902 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:49:05,902 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:49:05,907 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:49:05,914 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-01 15:49:05,914 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-01 15:49:05,933 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081/hello
+2020-05-01 15:49:05,938 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-01 15:49:05,939 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: hellogitjenkinsFlow
+2020-05-01 15:49:05,939 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: hellogitjenkinsFlow.stage1
+2020-05-01 15:49:05,973 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-01 15:49:05,981 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: hellogitjenkins                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-01 15:49:17,549 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - """"""""""""""""flow has started""""""""""""""""""""
+2020-05-01 15:49:17,688 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - __________________SubFlow-----------------------ParameterMap{[]}
+2020-05-01 15:49:52,162 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - """"""""""""""""flow has started""""""""""""""""""""
+2020-05-01 15:49:52,163 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - __________________SubFlow-----------------------ParameterMap{[]}
+2020-05-01 15:50:26,185 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:50:26,191 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: hellogitjenkinsFlow
+2020-05-01 15:50:26,191 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: hellogitjenkinsFlow.stage1
+2020-05-01 15:50:26,367 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-01 15:50:26,393 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://localhost:8081/hello
+2020-05-01 15:50:26,399 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-01 15:50:26,399 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-01 15:50:26,414 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'hellogitjenkins'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:50:26,441 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-01 15:50:26,446 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: hellogitjenkinsFlow
+2020-05-01 15:50:26,448 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: hellogitjenkinsFlow.stage1
+2020-05-01 15:50:26,453 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-01 15:50:26,512 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@46146526: startup date [Fri May 01 15:49:05 IST 2020]; root of context hierarchy
+2020-05-01 15:50:26,534 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "hellogitjenkins" shut down normally on: 1/5/20 3:50   *
+* PM                                                                 *
+* Up for: 0 days, 0 hours, 1 mins, 20.627 sec                        *
+**********************************************************************
+2020-05-01 15:50:26,690 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'hellogitjenkins'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:50:26,708 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-01 15:50:26,709 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-01 15:50:26,725 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-01 15:50:26,758 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-01 15:50:26,758 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-01 15:50:26,765 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@8444ea6: startup date [Fri May 01 15:50:26 IST 2020]; root of context hierarchy
+2020-05-01 15:50:27,376 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 15:50:27,589 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx2.log
+2020-05-01 15:50:27,594 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx2.log
+2020-05-01 15:50:27,605 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-01 15:50:27,605 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: hellogitjenkinsFlow
+2020-05-01 15:50:27,605 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4cd39f8c
+2020-05-01 15:50:27,614 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: hellogitjenkinsFlow.stage1
+2020-05-01 15:50:27,656 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:50:27,656 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:50:27,656 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:50:27,671 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-01 15:50:27,671 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-01 15:50:27,689 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081/hello
+2020-05-01 15:50:27,692 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-01 15:50:27,692 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: hellogitjenkinsFlow
+2020-05-01 15:50:27,692 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: hellogitjenkinsFlow.stage1
+2020-05-01 15:50:27,716 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-01 15:50:27,723 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: hellogitjenkins                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-01 15:50:28,797 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - """"""""""""""""flow has started""""""""""""""""""""
+2020-05-01 15:50:28,912 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - __________________SubFlow-----------------------null
+2020-05-01 15:50:40,261 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - """"""""""""""""flow has started""""""""""""""""""""
+2020-05-01 15:50:40,263 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - __________________SubFlow-----------------------null
+2020-05-01 15:51:07,862 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:51:07,869 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: hellogitjenkinsFlow
+2020-05-01 15:51:07,870 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: hellogitjenkinsFlow.stage1
+2020-05-01 15:51:08,075 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-01 15:51:08,087 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://localhost:8081/hello
+2020-05-01 15:51:08,091 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-01 15:51:08,091 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-01 15:51:08,096 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'hellogitjenkins'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:51:08,096 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-01 15:51:08,098 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: hellogitjenkinsFlow
+2020-05-01 15:51:08,098 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: hellogitjenkinsFlow.stage1
+2020-05-01 15:51:08,101 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-01 15:51:08,156 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@8444ea6: startup date [Fri May 01 15:50:26 IST 2020]; root of context hierarchy
+2020-05-01 15:51:08,166 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "hellogitjenkins" shut down normally on: 1/5/20 3:51   *
+* PM                                                                 *
+* Up for: 0 days, 0 hours, 0 mins, 40.509 sec                        *
+**********************************************************************
+2020-05-01 15:51:08,318 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'hellogitjenkins'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:51:08,326 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-01 15:51:08,329 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-01 15:51:08,334 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-01 15:51:08,339 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-01 15:51:08,355 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-01 15:51:08,357 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@56c84e4a: startup date [Fri May 01 15:51:08 IST 2020]; root of context hierarchy
+2020-05-01 15:51:08,790 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 15:51:08,988 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx2.log
+2020-05-01 15:51:08,989 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx2.log
+2020-05-01 15:51:09,010 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-01 15:51:09,011 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: hellogitjenkinsFlow
+2020-05-01 15:51:09,015 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7f120bfc
+2020-05-01 15:51:09,029 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: hellogitjenkinsFlow.stage1
+2020-05-01 15:51:09,071 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:51:09,072 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:51:09,072 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:51:09,078 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-01 15:51:09,078 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-01 15:51:09,093 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081/hello
+2020-05-01 15:51:09,106 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-01 15:51:09,108 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: hellogitjenkinsFlow
+2020-05-01 15:51:09,109 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: hellogitjenkinsFlow.stage1
+2020-05-01 15:51:09,161 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-01 15:51:09,179 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: hellogitjenkins                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-01 15:51:16,579 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - """"""""""""""""flow has started""""""""""""""""""""
+2020-05-01 15:51:16,711 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - __________________SubFlow-----------------------null
+2020-05-01 15:51:54,259 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:51:54,261 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: hellogitjenkinsFlow
+2020-05-01 15:51:54,261 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: hellogitjenkinsFlow.stage1
+2020-05-01 15:51:54,407 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-01 15:51:54,411 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://localhost:8081/hello
+2020-05-01 15:51:54,412 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-01 15:51:54,412 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-01 15:51:54,415 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'hellogitjenkins'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:51:54,415 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-01 15:51:54,416 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: hellogitjenkinsFlow
+2020-05-01 15:51:54,416 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: hellogitjenkinsFlow.stage1
+2020-05-01 15:51:54,417 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-01 15:51:54,446 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@56c84e4a: startup date [Fri May 01 15:51:08 IST 2020]; root of context hierarchy
+2020-05-01 15:51:54,450 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "hellogitjenkins" shut down normally on: 1/5/20 3:51   *
+* PM                                                                 *
+* Up for: 0 days, 0 hours, 0 mins, 45.377 sec                        *
+**********************************************************************
+2020-05-01 15:51:54,526 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'hellogitjenkins'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:51:54,530 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-01 15:51:54,534 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-01 15:51:54,539 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-01 15:51:54,553 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-01 15:51:54,553 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-01 15:51:54,557 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@7ca46335: startup date [Fri May 01 15:51:54 IST 2020]; root of context hierarchy
+2020-05-01 15:51:54,875 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 15:51:55,598 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx2.log
+2020-05-01 15:51:55,600 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx2.log
+2020-05-01 15:51:55,609 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-01 15:51:55,612 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: hellogitjenkinsFlow
+2020-05-01 15:51:55,614 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7cb1417e
+2020-05-01 15:51:55,620 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: hellogitjenkinsFlow.stage1
+2020-05-01 15:51:55,640 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:51:55,640 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:51:55,646 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:51:55,649 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-01 15:51:55,649 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-01 15:51:55,662 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081/hello
+2020-05-01 15:51:55,665 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-01 15:51:55,667 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: hellogitjenkinsFlow
+2020-05-01 15:51:55,667 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: hellogitjenkinsFlow.stage1
+2020-05-01 15:51:55,680 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-01 15:51:55,686 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: hellogitjenkins                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-01 15:52:00,116 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - """"""""""""""""flow has started""""""""""""""""""""
+2020-05-01 15:52:00,146 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - __________________SubFlow-----------------------hello
+2020-05-01 15:52:50,826 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:52:50,833 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: hellogitjenkinsFlow
+2020-05-01 15:52:50,833 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: hellogitjenkinsFlow.stage1
+2020-05-01 15:52:50,886 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-01 15:52:50,891 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://localhost:8081/hello
+2020-05-01 15:52:50,893 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-01 15:52:50,893 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-01 15:52:50,896 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'hellogitjenkins'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:52:50,898 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-01 15:52:50,899 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: hellogitjenkinsFlow
+2020-05-01 15:52:50,899 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: hellogitjenkinsFlow.stage1
+2020-05-01 15:52:50,904 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-01 15:52:50,921 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@7ca46335: startup date [Fri May 01 15:51:54 IST 2020]; root of context hierarchy
+2020-05-01 15:52:50,925 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "hellogitjenkins" shut down normally on: 1/5/20 3:52   *
+* PM                                                                 *
+* Up for: 0 days, 0 hours, 0 mins, 55.277 sec                        *
+**********************************************************************
+2020-05-01 15:52:51,010 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'hellogitjenkins'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:52:51,025 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-01 15:52:51,028 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-01 15:52:51,033 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-01 15:52:51,049 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-01 15:52:51,050 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-01 15:52:51,057 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@11feb4b7: startup date [Fri May 01 15:52:51 IST 2020]; root of context hierarchy
+2020-05-01 15:52:51,333 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-01 15:52:51,464 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-tx-log\tx2.log
+2020-05-01 15:52:51,484 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\hellogitjenkins\queue-xa-tx-log\tx2.log
+2020-05-01 15:52:51,491 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-01 15:52:51,496 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: hellogitjenkinsFlow
+2020-05-01 15:52:51,499 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5768d958
+2020-05-01 15:52:51,507 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: hellogitjenkinsFlow.stage1
+2020-05-01 15:52:51,538 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:52:51,538 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\hellogitjenkins\hellogitjenkins.xml'}]"
+2020-05-01 15:52:51,539 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'hellogitjenkins'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-01 15:52:51,541 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-01 15:52:51,541 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-01 15:52:51,566 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081/hello
+2020-05-01 15:52:51,567 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-01 15:52:51,573 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: hellogitjenkinsFlow
+2020-05-01 15:52:51,573 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: hellogitjenkinsFlow.stage1
+2020-05-01 15:52:51,584 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-01 15:52:51,600 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: hellogitjenkins                                       *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-01 15:52:57,121 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - """"""""""""""""flow has started""""""""""""""""""""
+2020-05-01 15:52:57,167 [[hellogitjenkins].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - __________________SubFlow-----------------------WelcomTo GitJenkins........

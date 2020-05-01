@@ -1,0 +1,177 @@
+!SESSION 2020-05-01 15:23:32.551 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_232
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data F:\R language & git\MulesoftSourceCode
+
+!ENTRY org.mule.tooling.core 1 0 2020-05-01 15:23:39.831
+!MESSAGE Configuring M2_REPO variable with value: C:\Users\madhu\.m2\repository
+
+!ENTRY org.mule.tooling.core 1 0 2020-05-01 15:23:39.845
+!MESSAGE Configuring M2_REPO variable with value: C:\Users\madhu\.m2\repository
+
+!ENTRY org.eclipse.ui 4 4 2020-05-01 15:23:41.683
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ContentOutline.
+
+!ENTRY org.eclipse.ui 4 4 2020-05-01 15:23:41.689
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ContentOutline.
+
+!ENTRY org.eclipse.jface 2 0 2020-05-01 15:27:14.649
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2020-05-01 15:27:14.649
+!MESSAGE A conflict occurred for CTRL+F:
+Binding(CTRL+F,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.findReplace,Find and Replace,
+		Find and replace text,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@507c795e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+F,
+	ParameterizedCommand(Command(org.mule.tooling.ui.dfl.contribution.commands.searchCommand,Find/Replace,
+		Find/Replace,
+		Category(org.mule.tooling.ui.commandcategory,org.mule.tooling.ui.commandcategory,Category for menu commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@472c13d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.mule.tooling.contexts.mulePropertiesEditor,,,system)
+Binding(CTRL+F,
+	ParameterizedCommand(Command(org.mule.tooling.commands.focusSearchCommand,Focus Search Command,
+		Focus Search in Palette,
+		Category(org.mule.tooling.ui.commandcategory,org.mule.tooling.ui.commandcategory,Category for menu commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2533cbcc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.mule.tooling.contexts.mulePropertiesEditor,,,system)
+
+!ENTRY org.mule.tooling.core 1 0 2020-05-01 15:28:30.794
+!MESSAGE While generating classpath found that F:\Mule\AnypointStudio\plugins\org.mule.tooling.server.3.9.2.ee_6.5.0.201811221913\mule\lib\endorsed\ is not a directory.
+
+!ENTRY org.mule.tooling.core 1 0 2020-05-01 15:28:30.823
+!MESSAGE While generating classpath found that F:\Mule\AnypointStudio\plugins\org.mule.tooling.server.3.9.2.ee_6.5.0.201811221913\mule\lib\endorsed\ is not a directory.
+
+!ENTRY org.mule.tooling.core 1 0 2020-05-01 15:28:30.830
+!MESSAGE While generating classpath found that F:\Mule\AnypointStudio\plugins\org.mule.tooling.server.3.9.2.ee_6.5.0.201811221913\mule\lib\endorsed\ is not a directory.
+
+!ENTRY org.mule.tooling.core 1 0 2020-05-01 15:28:30.842
+!MESSAGE While generating classpath found that F:\Mule\AnypointStudio\plugins\org.mule.tooling.server.3.9.2.ee_6.5.0.201811221913\mule\lib\endorsed\ is not a directory.
+
+!ENTRY org.mule.tooling.core 1 0 2020-05-01 15:28:30.855
+!MESSAGE While generating classpath found that F:\Mule\AnypointStudio\plugins\org.mule.tooling.server.3.9.2.ee_6.5.0.201811221913\mule\lib\endorsed\ is not a directory.
+
+!ENTRY org.mule.tooling.core 1 0 2020-05-01 15:28:30.872
+!MESSAGE While generating classpath found that F:\Mule\AnypointStudio\plugins\org.mule.tooling.server.3.9.2.ee_6.5.0.201811221913\mule\lib\endorsed\ is not a directory.
+
+!ENTRY org.mule.tooling.core 2 0 2020-05-01 15:28:31.694
+!MESSAGE Authenticator was changed to class org.mule.tooling.utils.networking.ProxyAuthenticator. Restoring default authenticator to null
+
+!ENTRY org.mule.tooling.core 2 0 2020-05-01 15:28:31.717
+!MESSAGE Authenticator was changed to class org.mule.tooling.utils.networking.ProxyAuthenticator. Restoring default authenticator to null
+
+!ENTRY org.mule.tooling.core 2 0 2020-05-01 15:28:31.729
+!MESSAGE Authenticator was changed to class org.mule.tooling.utils.networking.ProxyAuthenticator. Restoring default authenticator to null
+
+!ENTRY org.mule.tooling.core 2 0 2020-05-01 15:28:31.740
+!MESSAGE Authenticator was changed to class org.mule.tooling.utils.networking.ProxyAuthenticator. Restoring default authenticator to null
+
+!ENTRY org.mule.tooling.core 2 0 2020-05-01 15:28:31.748
+!MESSAGE Authenticator was changed to class org.mule.tooling.utils.networking.ProxyAuthenticator. Restoring default authenticator to null
+
+!ENTRY org.mule.tooling.core 2 0 2020-05-01 15:28:31.756
+!MESSAGE Authenticator was changed to class org.mule.tooling.utils.networking.ProxyAuthenticator. Restoring default authenticator to null
+
+!ENTRY org.mule.tooling.core 4 0 2020-05-01 15:36:41.460
+!MESSAGE Error opening resource hellogitjenkins.xml
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/hellogitjenkins/src/main/app/hellogitjenkins.xml'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:845)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:277)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:268)
+	at org.mule.tooling.core.io.MuleResourceUtils.isConfigFile(MuleResourceUtils.java:145)
+	at org.mule.tooling.core.io.MuleResourceUtils.isConfigFile(MuleResourceUtils.java:193)
+	at org.mule.tooling.core.utils.CoreUtils$4.visitFile(CoreUtils.java:806)
+	at org.mule.tooling.core.utils.MuleProjectResourceVisitor.visit(MuleProjectResourceVisitor.java:19)
+	at org.eclipse.core.internal.resources.Resource$2.visit(Resource.java:120)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:117)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:105)
+	at org.mule.tooling.core.utils.CoreUtils.collectDeployableMuleConfigurationsFromProjectExcluding(CoreUtils.java:801)
+	at org.mule.tooling.ui.modules.core.widgets.AttributeContext.collectMuleConfigurations(AttributeContext.java:208)
+	at org.mule.tooling.ui.modules.core.widgets.AttributeContext.getGlobalEntriesWithConfig(AttributeContext.java:149)
+	at org.mule.tooling.ui.modules.core.widgets.AttributeContext.getGlobalEntries(AttributeContext.java:143)
+	at org.mule.tooling.ui.modules.core.widgets.utils.NameValidator.validate(NameValidator.java:77)
+	at org.mule.tooling.ui.modules.core.widgets.utils.NameValidator.validate(NameValidator.java:36)
+	at org.mule.tooling.ui.modules.core.widgets.AttributeModelWithHelper$1.validate(AttributeModelWithHelper.java:80)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainValidatorVisitor.enterNode(DomainValidatorVisitor.java:185)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainEditingModelObject.traverse(DomainEditingModelObject.java:92)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainEditingModelObject.traverse(DomainEditingModelObject.java:97)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.doValidate(MuleConfigurationValidator.java:177)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.collectErrorMessages(MuleConfigurationValidator.java:166)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.validate(MuleConfigurationValidator.java:134)
+	at org.mule.tooling.core.builder.TransformerUtils.getMuleConfigurationErrorsFromSource(TransformerUtils.java:176)
+	at org.mule.tooling.messageflow.editor.MultiPageMessageFlowEditor.doValidate(MultiPageMessageFlowEditor.java:1379)
+	at org.mule.tooling.messageflow.editor.MultiPageMessageFlowEditor$ValidateFromEditorJob.doRun(MultiPageMessageFlowEditor.java:1655)
+	at org.mule.tooling.core.utils.StudioDesignContextJob$1.call(StudioDesignContextJob.java:29)
+	at org.mule.tooling.core.utils.StudioDesignContextJob$1.call(StudioDesignContextJob.java:1)
+	at org.mule.tooling.core.StudioDesignContextRunner.runWithMuleProject(StudioDesignContextRunner.java:69)
+	at org.mule.tooling.core.utils.StudioDesignContextJob.run(StudioDesignContextJob.java:25)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2020-05-01 15:36:41.467
+!MESSAGE Resource is out of sync with the file system: '/hellogitjenkins/src/main/app/hellogitjenkins.xml'.
+
+!ENTRY org.mule.tooling.core 4 0 2020-05-01 15:36:41.550
+!MESSAGE Error opening resource hellogitjenkins.xml
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/hellogitjenkins/src/main/app/hellogitjenkins.xml'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:845)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:277)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:268)
+	at org.mule.tooling.core.io.MuleResourceUtils.isConfigFile(MuleResourceUtils.java:145)
+	at org.mule.tooling.core.io.MuleResourceUtils.isConfigFile(MuleResourceUtils.java:193)
+	at org.mule.tooling.core.utils.CoreUtils$4.visitFile(CoreUtils.java:806)
+	at org.mule.tooling.core.utils.MuleProjectResourceVisitor.visit(MuleProjectResourceVisitor.java:19)
+	at org.eclipse.core.internal.resources.Resource$2.visit(Resource.java:120)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:84)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:87)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:129)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:94)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:52)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:117)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:105)
+	at org.mule.tooling.core.utils.CoreUtils.collectDeployableMuleConfigurationsFromProjectExcluding(CoreUtils.java:801)
+	at org.mule.tooling.ui.modules.core.widgets.AttributeContext.collectMuleConfigurations(AttributeContext.java:208)
+	at org.mule.tooling.ui.modules.core.widgets.AttributeContext.getGlobalEntriesWithConfig(AttributeContext.java:149)
+	at org.mule.tooling.ui.modules.core.widgets.AttributeContext.getGlobalEntries(AttributeContext.java:143)
+	at org.mule.tooling.ui.modules.core.widgets.utils.NameValidator.validate(NameValidator.java:77)
+	at org.mule.tooling.ui.modules.core.widgets.utils.NameValidator.validate(NameValidator.java:36)
+	at org.mule.tooling.ui.modules.core.widgets.AttributeModelWithHelper$1.validate(AttributeModelWithHelper.java:80)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainValidatorVisitor.enterNode(DomainValidatorVisitor.java:185)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainEditingModelObject.traverse(DomainEditingModelObject.java:92)
+	at com.onpositive.commons.namespace.ide.ui.editors.xml.model.DomainEditingModelObject.traverse(DomainEditingModelObject.java:97)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.doValidate(MuleConfigurationValidator.java:177)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.collectErrorMessages(MuleConfigurationValidator.java:166)
+	at org.mule.tooling.ui.modules.core.validation.MuleConfigurationValidator.validate(MuleConfigurationValidator.java:134)
+	at org.mule.tooling.core.builder.TransformerUtils.getMuleConfigurationErrorsFromSource(TransformerUtils.java:176)
+	at org.mule.tooling.messageflow.editor.MultiPageMessageFlowEditor.doValidate(MultiPageMessageFlowEditor.java:1379)
+	at org.mule.tooling.messageflow.editor.MultiPageMessageFlowEditor$ValidateFromEditorJob.doRun(MultiPageMessageFlowEditor.java:1655)
+	at org.mule.tooling.core.utils.StudioDesignContextJob$1.call(StudioDesignContextJob.java:29)
+	at org.mule.tooling.core.utils.StudioDesignContextJob$1.call(StudioDesignContextJob.java:1)
+	at org.mule.tooling.core.StudioDesignContextRunner.runWithMuleProject(StudioDesignContextRunner.java:69)
+	at org.mule.tooling.core.utils.StudioDesignContextJob.run(StudioDesignContextJob.java:25)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2020-05-01 15:36:41.550
+!MESSAGE Resource is out of sync with the file system: '/hellogitjenkins/src/main/app/hellogitjenkins.xml'.
