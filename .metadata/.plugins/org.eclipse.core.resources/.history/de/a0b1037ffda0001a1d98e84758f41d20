@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:file="http://www.mulesoft.org/schema/mule/file" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/current/mule-jms.xsd
+http://www.mulesoft.org/schema/mule/file http://www.mulesoft.org/schema/mule/file/current/mule-file.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="localhost" port="8081" doc:name="HTTP Listener Configuration" basePath="/jmsf"/>
+    <jms:activemq-connector name="Active_MQ" username="admin" password="admin" brokerURL="tcp://localhost:61616" validateConnections="true" doc:name="Active MQ"/>
+    <flow name="jmsexamplesFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/JMS1" doc:name="HTTP"/>
+        <object-to-string-transformer doc:name="Object to String"/>
+        <set-payload value="#[payload]" doc:name="Set Payload"/>
+        <jms:outbound-endpoint exchange-pattern="request-response" queue="Testing1" connector-ref="Active_MQ" doc:name="JMS"/>
+        <response>
+            <logger message="*********Confirmation message has been sent to Source*************" level="INFO" doc:name="Logger"/>
+        </response>
+    </flow>
+    <flow name="jmsexamplesFlow2">
+        <file:inbound-endpoint path="E:\InputFile" responseTimeout="10000" doc:name="File"/>
+        <logger message="*********File has been Received from File************" level="INFO" doc:name="Logger"/>
+        <jms:outbound-endpoint exchange-pattern="request-response" queue="FileQueue" connector-ref="Active_MQ" doc:name="JMS"/>
+    </flow>
+    <flow name="jmsexamplesFlow1">
+        <jms:inbound-endpoint exchange-pattern="request-response" queue="Testing1" connector-ref="Active_MQ" doc:name="JMS"/>
+        <logger message="Message has been Receved" level="WARN" doc:name="Logger"/>
+    </flow>
+    <flow name="jmsexamplesFlow3">
+        <jms:inbound-endpoint exchange-pattern="request-response" queue="FileQueue" connector-ref="Active_MQ" doc:name="JMS"/>
+        <logger message="*********Receiver Qjeue has been processed*************" level="INFO" doc:name="Logger"/>
+        <file:outbound-endpoint path="E:\OutputFile" outputPattern="Sample" responseTimeout="10000" doc:name="File"/>
+    </flow>
+</mule>

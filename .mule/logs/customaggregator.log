@@ -1,0 +1,189 @@
+2020-05-22 16:25:57,561 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'customaggregator'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-22 16:25:57,902 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-22 16:25:57,917 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-22 16:25:58,105 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-22 16:25:58,261 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-22 16:25:58,261 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-22 16:25:58,573 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@d78795: startup date [Fri May 22 16:25:58 IST 2020]; root of context hierarchy
+2020-05-22 16:26:00,413 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 16:26:01,698 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-05-22 16:26:02,284 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\customaggregator\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\customaggregator\queue-tx-log\tx2.log
+2020-05-22 16:26:02,316 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\customaggregator\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\customaggregator\queue-xa-tx-log\tx2.log
+2020-05-22 16:26:02,316 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2020-05-22 16:26:02,733 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-22 16:26:02,747 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: messagechunksplitterFlow
+2020-05-22 16:26:02,747 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@45ab3bdd
+2020-05-22 16:26:02,779 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: messagechunksplitterFlow.stage1
+2020-05-22 16:26:03,107 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\customaggregator\customaggregator.xml'}]"
+2020-05-22 16:26:03,107 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\customaggregator\customaggregator.xml'}]"
+2020-05-22 16:26:03,107 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-05-22 16:26:03,107 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'customaggregator'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-22 16:26:03,138 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-22 16:26:03,138 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-22 16:26:03,185 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/mc
+2020-05-22 16:26:03,200 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=56e9a474
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-05-22 16:26:03,200 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=56e9a474
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-05-22 16:26:03,200 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2020-05-22 16:26:03,200 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-22 16:26:03,200 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: messagechunksplitterFlow
+2020-05-22 16:26:03,200 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: messagechunksplitterFlow.stage1
+2020-05-22 16:26:03,263 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-22 16:26:03,294 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.customaggregator:type=Connector,name="connector.file.mule.default"
+2020-05-22 16:26:03,310 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: customaggregator                                      *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-22 16:26:43,798 [[customaggregator].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (POST)/mc//MessageChunk
+2020-05-22 16:26:43,798 [[customaggregator].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/mc/MessageChunk/]
+2020-05-22 16:27:08,386 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'customaggregator'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-22 16:27:08,392 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: messagechunksplitterFlow
+2020-05-22 16:27:08,395 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: messagechunksplitterFlow.stage1
+2020-05-22 16:27:08,478 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.routing.correlation.EventCorrelator - Stopping event correlator: [customaggregator].messagechunksplitterFlow.event.correlator
+2020-05-22 16:27:08,479 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-22 16:27:08,482 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping connector: connector.file.mule.default
+2020-05-22 16:27:08,490 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081/mc
+2020-05-22 16:27:08,492 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-22 16:27:08,493 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-22 16:27:08,500 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'customaggregator'                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-22 16:27:08,502 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-22 16:27:08,504 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: messagechunksplitterFlow
+2020-05-22 16:27:08,505 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: messagechunksplitterFlow.stage1
+2020-05-22 16:27:08,510 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-22 16:27:08,521 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Disconnected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=stop
+  this=56e9a474
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-05-22 16:27:08,525 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing connector: connector.file.mule.default
+2020-05-22 16:27:08,728 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@d78795: startup date [Fri May 22 16:25:58 IST 2020]; root of context hierarchy
+2020-05-22 16:27:08,744 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "customaggregator" shut down normally on: 22/5/20      *
+* 4:27 PM                                                            *
+* Up for: 0 days, 0 hours, 1 mins, 5.621 sec                         *
+**********************************************************************
+2020-05-22 16:27:08,884 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'customaggregator'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-22 16:27:08,884 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-22 16:27:08,900 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-22 16:27:08,900 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-22 16:27:08,931 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-22 16:27:08,931 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-22 16:27:08,931 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@2801e960: startup date [Fri May 22 16:27:08 IST 2020]; root of context hierarchy
+2020-05-22 16:27:09,364 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-22 16:27:09,666 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\customaggregator\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\customaggregator\queue-tx-log\tx2.log
+2020-05-22 16:27:09,682 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\customaggregator\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\customaggregator\queue-xa-tx-log\tx2.log
+2020-05-22 16:27:09,682 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2020-05-22 16:27:09,713 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-22 16:27:09,713 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: messagechunksplitterFlow
+2020-05-22 16:27:09,713 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6f9b179f
+2020-05-22 16:27:09,729 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: messagechunksplitterFlow.stage1
+2020-05-22 16:27:09,775 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\customaggregator\customaggregator.xml'}]"
+2020-05-22 16:27:09,775 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\customaggregator\customaggregator.xml'}]"
+2020-05-22 16:27:09,775 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'customaggregator'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-22 16:27:09,775 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-22 16:27:09,775 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-22 16:27:09,807 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081/mc
+2020-05-22 16:27:09,807 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=77f07154
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-05-22 16:27:09,807 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=77f07154
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-05-22 16:27:09,807 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2020-05-22 16:27:09,807 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-22 16:27:09,807 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: messagechunksplitterFlow
+2020-05-22 16:27:09,807 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: messagechunksplitterFlow.stage1
+2020-05-22 16:27:09,854 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-22 16:27:09,854 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.customaggregator:type=Connector,name="connector.file.mule.default"
+2020-05-22 16:27:09,854 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: customaggregator                                      *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-22 16:27:18,486 [[customaggregator].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (POST)/mc//MessageChunk
+2020-05-22 16:27:18,486 [[customaggregator].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [(*)/mc/MessageChunk/]
+2020-05-22 16:27:28,247 [[customaggregator].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - *************org.glassfish.grizzly.utils.BufferInputStream@357ba252
+2020-05-22 16:27:28,302 [[customaggregator].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.1295147263'. Object is: FileMessageDispatcher
+2020-05-22 16:27:28,312 [[customaggregator].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.1295147263'. Object is: FileMessageDispatcher
+2020-05-22 16:27:28,319 [[customaggregator].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.file.FileConnector - Writing file to: F:\R language & git\MulesoftSourceCode\customaggregator\src\test\resources\split\06f793c0-9c1b-11ea-9460-f828198890b5.dat
+2020-05-22 16:27:28,353 [[customaggregator].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.file.FileConnector - Writing file to: F:\R language & git\MulesoftSourceCode\customaggregator\src\test\resources\split\06fd1200-9c1b-11ea-9460-f828198890b5.dat
+2020-05-22 16:27:28,359 [[customaggregator].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.file.FileConnector - Writing file to: F:\R language & git\MulesoftSourceCode\customaggregator\src\test\resources\split\06fdfc60-9c1b-11ea-9460-f828198890b5.dat
+2020-05-22 16:27:28,373 [[customaggregator].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.208661826'. Object is: FileMessageDispatcher
+2020-05-22 16:27:28,373 [[customaggregator].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.208661826'. Object is: FileMessageDispatcher
+2020-05-22 16:27:28,376 [[customaggregator].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.file.FileConnector - Writing file to: F:\R language & git\MulesoftSourceCode\customaggregator\src\test\resources\aggregator\07006d60-9c1b-11ea-9460-f828198890b5.dat

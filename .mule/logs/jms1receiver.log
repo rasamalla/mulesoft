@@ -1,0 +1,69 @@
+2020-05-28 19:35:14,488 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'jms1receiver'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-28 19:35:14,891 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-28 19:35:14,905 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-28 19:35:15,093 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-28 19:35:15,239 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-28 19:35:15,239 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-28 19:35:15,550 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@7caa550: startup date [Thu May 28 19:35:15 IST 2020]; root of context hierarchy
+2020-05-28 19:35:17,535 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-28 19:35:18,874 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-05-28 19:35:19,330 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\jms1receiver\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\jms1receiver\queue-tx-log\tx2.log
+2020-05-28 19:35:19,344 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\jms1receiver\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\jms1receiver\queue-xa-tx-log\tx2.log
+2020-05-28 19:35:19,353 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: Active_MQ
+2020-05-28 19:35:19,802 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-28 19:35:19,809 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: jmsFlow
+2020-05-28 19:35:19,810 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6af90849
+2020-05-28 19:35:19,851 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: jmsFlow.stage1
+2020-05-28 19:35:20,169 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\jms1receiver\jms1receiver.xml'}]"
+2020-05-28 19:35:20,169 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\jms1receiver\jms1receiver.xml'}]"
+2020-05-28 19:35:20,174 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-05-28 19:35:20,179 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'jms1receiver'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-28 19:35:20,196 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-28 19:35:20,196 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-28 19:35:20,261 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/jms1r
+2020-05-28 19:35:20,707 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Connected: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=7e83992
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2020-05-28 19:35:20,707 [main] INFO  org.mule.transport.jms.activemq.ActiveMQJmsConnector - Starting: ActiveMQJmsConnector
+{
+  name=Active_MQ
+  lifecycle=initialise
+  this=7e83992
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[jms]
+  serviceOverrides=<none>
+}
+
+2020-05-28 19:35:20,708 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: Active_MQ
+2020-05-28 19:35:20,719 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-28 19:35:20,721 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: jmsFlow
+2020-05-28 19:35:20,722 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: jmsFlow.stage1
+2020-05-28 19:35:20,795 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-28 19:35:20,835 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.jms1receiver:type=Connector,name="Active_MQ"
+2020-05-28 19:35:20,844 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: jms1receiver                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************

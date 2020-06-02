@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+<mule xmlns:vm="http://www.mulesoft.org/schema/mule/vm" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
 	xmlns:spring="http://www.springframework.org/schema/beans" 
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
 http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
-http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
-    <http:listener-config name="HTTP_Listener_Configuration" host="localhost" port="8081" basePath="/hello" doc:name="HTTP Listener Configuration"/>
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" basePath="/h" doc:name="HTTP Listener Configuration"/>
+    <vm:connector name="VM" validateConnections="true" doc:name="VM"/>
     <flow name="hellogitjenkinsFlow">
-        <http:listener config-ref="HTTP_Listener_Configuration" path="/hellogitjenkins"  doc:name="HTTP"/>
-        <logger message="&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;flow has started&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;" level="INFO" doc:name="Logger"/>
-        <set-variable variableName="Name" value="WelcomTo GitJenkins........" doc:name="Variable"/>
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/hello" doc:name="HTTP"/>
+        <logger message="***************hello*****************" level="INFO" doc:name="Logger"/>
+        <set-payload value="hello" doc:name="Set Payload"/>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
         <flow-ref name="hellogitjenkinsSub_Flow" doc:name="Flow Reference"/>
-        <set-payload value="#[flowVars.Name]" doc:name="Set Payload"/>
+        <logger message="sub executed successful............#[payload]" level="INFO" doc:name="Logger"/>
+        <catch-exception-strategy when="when" doc:name="Catch Exception Strategy">
+            <set-payload doc:name="Set Payload" value="welcome to catch exception....."/>
+        </catch-exception-strategy>
     </flow>
     <sub-flow name="hellogitjenkinsSub_Flow">
-        <logger message="__________________SubFlow-----------------------#[flowVars.Name]" level="INFO" doc:name="Logger"/>
-        <set-payload value="#[flowVars.Name]" doc:name="Set Payload"/>
+        <logger message="sub flow...." level="INFO" doc:name="Logger"/>
+        <set-payload value="sub flow...." doc:name="Set Payload"/>
+        <logger message="#[payload ] sub flow vm lat logger...." level="INFO" doc:name="Logger"/>
     </sub-flow>
 </mule>

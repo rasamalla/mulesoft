@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:vm="http://www.mulesoft.org/schema/mule/vm" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/vm http://www.mulesoft.org/schema/mule/vm/current/mule-vm.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="localhost" port="8080" doc:name="HTTP Listener Configuration" basePath="/vmrr"/>
+    <vm:connector name="VM" validateConnections="true" doc:name="VM"/>
+    <http:request-config name="HTTP_Request_Configuration" host="localhost" port="8973" doc:name="HTTP Request Configuration"/>
+    <flow name="request-replyFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/Req-Rep" doc:name="HTTP"/>
+        <logger message="************Request has been Received from Http*************" level="INFO" doc:name="Logger"/>
+        <set-payload value="#[payload]" doc:name="Set Payload"/>
+        <logger message="#[message.payloadAs(java.lang.String)]" level="INFO" doc:name="Logger"/>
+        <object-to-string-transformer doc:name="Object to String"/>
+        <set-variable variableName="payloadVariable" value="#[payload]" doc:name="Variable"/>
+        <logger message="After Set Payload************#[payload]" level="INFO" doc:name="Logger"/>
+        <set-variable variableName="Profession" value="#[message.inboundProperties.'http.query.params'.JOB]" doc:name="Variable"/>
+        <logger message="***Flow******#[flowVars.Profession]" level="INFO" doc:name="Logger"/>
+        <set-session-variable variableName="MyProfession" value="#[flowVars.Profession]" doc:name="Session Variable"/>
+        <logger message="*********Session********#[sessionVars.MyProfession]" level="INFO" doc:name="Logger"/>
+        <request-reply doc:name="Request-Reply">
+            <vm:outbound-endpoint exchange-pattern="request-response" path="Sender1" connector-ref="VM" doc:name="VM"/>
+            <vm:inbound-endpoint exchange-pattern="one-way" path="Sender3" connector-ref="VM" doc:name="VM"/>
+        </request-reply>
+        <logger message="**********Final Receiver Received the Request****************" level="INFO" doc:name="Logger"/>
+        <response>
+            <set-payload value="Finally Application has been Delivered!***********#[flowVars.payloadVariable]" doc:name="Set Payload"/>
+        </response>
+
+    </flow>
+    <flow name="request-replyFlow1">
+        <vm:inbound-endpoint exchange-pattern="request-response" path="Sender1" connector-ref="VM" doc:name="VM"/>
+        <set-payload value="Message and Correlation Id'are****************#[message.id]" doc:name="Set Payload"/>
+        <logger message="****Message Id Logger*************** #[payload]" level="INFO" doc:name="Logger"/>
+        <set-payload value="&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;     #[sessionVars.MyProfession]" doc:name="Set Payload"/>
+        <logger message="*********Before choice**********" level="INFO" doc:name="Logger"/>
+        <choice doc:name="Choice">
+            <when expression="sessionVars.MyProfession =='RICEBusiness'">
+                <vm:outbound-endpoint exchange-pattern="request-response" path="Sender2" connector-ref="VM" doc:name="VM"/>
+            </when>
+            <otherwise>
+                <set-payload value="***********&#199;hoice Condition Is not Satisfied**************" doc:name="Set Payload"/>
+            </otherwise>
+        </choice>
+        <logger message="**********After Choice*********" level="INFO" doc:name="Logger"/>
+    </flow>
+    <flow name="request-replyFlow2">
+        <vm:inbound-endpoint exchange-pattern="request-response" path="Sender2" connector-ref="VM" doc:name="VM"/>
+        <logger level="INFO" doc:name="Logger" message="***********After Choice Receiver*******************"/>
+        <set-payload value="#[sessionVars.MyProfession]" doc:name="Set Payload"/>
+        <http:request config-ref="HTTP_Request_Configuration" path="/HttpSender" method="POST" doc:name="HTTP">
+            <http:request-builder>
+                <http:query-param paramName="JOB" value="Business"/>
+            </http:request-builder>
+        </http:request>
+        <logger message="*********Http Request has been Sent to Receiver*************" level="INFO" doc:name="Logger"/>
+        <vm:outbound-endpoint exchange-pattern="request-response" path="Sender3" connector-ref="VM" doc:name="VM"/>
+    </flow>
+</mule>

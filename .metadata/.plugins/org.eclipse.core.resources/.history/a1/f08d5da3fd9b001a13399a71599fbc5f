@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:json="http://www.mulesoft.org/schema/mule/json" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw"
+	xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns:batch="http://www.mulesoft.org/schema/mule/batch"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/batch/current/mule-batch.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="localhost" port="6523" doc:name="HTTP Listener Configuration"/>
+    <http:listener-config name="HTTP_Listener_Configuration1" host="localhost" port="6874" doc:name="HTTP Listener Configuration"/>
+    <http:listener-config name="HTTP_Listener_Configuration2" host="localhost" port="8081" doc:name="HTTP Listener Configuration" basePath="/bp"/>
+
+  
+  <flow name="mule-configFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration2" path="/Batchprocessing" doc:name="HTTP"/>
+
+
+        <set-variable variableName="Name" value="shekhar" doc:name="Variable" />
+        <logger message="#[flowVars.Name]" level="INFO" doc:name="Logger"/>
+        <choice doc:name="Choice">
+            <when expression="flowVars.Name == 'shekhar'">
+                <batch:execute name="mule-simple-batch" doc:name="mule-simple-batch"/>
+
+            </when>
+            <otherwise>
+                <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+            </otherwise>
+        </choice>
+    </flow>
+    
+    <batch:job name="mule-simple-batch">
+    <batch:input>
+            <collection-aggregator failOnTimeout="true" doc:name="Collection Aggregator"/>
+
+    </batch:input>
+    <!-- Implicit Load and Dispatch phase --> 
+    <batch:process-records>     
+        <batch:step name="Batch_Step_1">
+            <flow-ref name="batch-step-1-process" doc:name="batch-step-1-process"/>
+        </batch:step>
+        <batch:step name="Batch_Step_2"  accept-expression="#[recordVars.FristBathCondition == 'True']">
+        <flow-ref name="batch-step-2-process" doc:name="batch-step-2-process"/>
+        </batch:step>
+
+
+    </batch:process-records>
+    <batch:on-complete>       
+        <logger message="#['Batch Processing Result: Loaded:'+ payload.loadedRecords + ',successful: '+ payload.successfulRecords +', failed:'+ payload.failedRecords]" level="INFO" doc:name="EndLogger"/>
+    </batch:on-complete>
+</batch:job>
+<sub-flow name="batch-step-1-process">
+    <logger message="#['Processing Step 1  with status: ' + flowVars.Name.trim()]" level="INFO" doc:name="Logger"/>
+
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-variable variableName="status"><![CDATA[%dw 1.0
+%output application/java
+
+---
+
+	('True' when flowVars.Name == 'Madan' otherwise 'False')
+]]></dw:set-variable>
+        </dw:transform-message>
+        <batch:set-record-variable variableName="FristBathCondition" value="#[flowVars.status]" doc:name="Record Variable"/>
+        <logger message="Firt Batch Payload**************#[flowVars.status]" level="INFO" doc:name="Logger"/>
+</sub-flow>
+<sub-flow name="batch-step-2-process">
+    <logger message="#['Processing Step 2 for Id:' + recordVars.id + ' with status: ' +recordVars.StatusProcessing]" level="INFO" doc:name="Logger"/>
+            <dw:transform-message doc:name="Transform Message">
+            <dw:set-variable variableName="status"><![CDATA[%dw 1.0
+%output application/java
+---
+ ('SecondBatchTrue' when recordVars.FristBathCondition == 'True' otherwise 'False')
+ 
+ ]]></dw:set-variable>
+    </dw:transform-message>
+        <batch:set-record-variable variableName="Statused" value="#[flowVars.status]" doc:name="Record Variable"/>
+        <logger message="Batch Process -2-Process********************#[recordVars.Statused]" level="INFO" doc:name="Logger"/>
+
+</sub-flow>
+
+</mule>

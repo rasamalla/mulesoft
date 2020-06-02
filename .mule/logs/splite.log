@@ -1,0 +1,232 @@
+2020-05-24 13:08:17,322 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'splite'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-24 13:08:17,733 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-24 13:08:17,749 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-24 13:08:17,960 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-24 13:08:18,137 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-24 13:08:18,137 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-24 13:08:18,449 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@d78795: startup date [Sun May 24 13:08:18 IST 2020]; root of context hierarchy
+2020-05-24 13:08:20,884 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-24 13:08:22,355 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-05-24 13:08:23,019 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\splite\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\splite\queue-tx-log\tx2.log
+2020-05-24 13:08:23,041 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\splite\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\splite\queue-xa-tx-log\tx2.log
+2020-05-24 13:08:23,072 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2020-05-24 13:08:23,583 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-24 13:08:23,590 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: splitterprojectFlow
+2020-05-24 13:08:23,590 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@68e02f33
+2020-05-24 13:08:23,644 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: splitterprojectFlow.stage1
+2020-05-24 13:08:23,997 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\splite\splite.xml'}]"
+2020-05-24 13:08:23,997 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\splite\splite.xml'}]"
+2020-05-24 13:08:24,006 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-05-24 13:08:24,007 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'splite'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-24 13:08:24,041 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-24 13:08:24,041 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-24 13:08:24,094 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081/spli
+2020-05-24 13:08:24,098 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=42383cb0
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-05-24 13:08:24,098 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=42383cb0
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-05-24 13:08:24,099 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2020-05-24 13:08:24,111 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-24 13:08:24,112 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: splitterprojectFlow
+2020-05-24 13:08:24,116 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: splitterprojectFlow.stage1
+2020-05-24 13:08:24,179 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-24 13:08:24,206 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.splite:type=Connector,name="connector.file.mule.default"
+2020-05-24 13:08:24,211 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: splite                                                *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-24 13:08:59,948 [[splite].HTTP_Listener_Configuration.worker.01] WARN  org.mule.module.xml.el.XPathFunction - xpath() MEL function has been deprecated in Mule 3.6.0 and will be removed in 4.0. Please use the new xpath3() function instead
+2020-05-24 13:08:59,953 [[splite].HTTP_Listener_Configuration.worker.01] WARN  org.mule.module.xml.expression.AbstractXPathExpressionEvaluator - The xpath-branch: expression evaluator has been deprecated in Mule 3.6.0 and will be removed in 4.0. Please use the xpath3() MEL function instead
+2020-05-24 13:09:00,393 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising: 'connector.file.mule.default.dispatcher.1979698636'. Object is: FileMessageDispatcher
+2020-05-24 13:09:00,413 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting: 'connector.file.mule.default.dispatcher.1979698636'. Object is: FileMessageDispatcher
+2020-05-24 13:09:00,420 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.file.FileConnector - Writing file to: F:\R language & git\MulesoftSourceCode\splite\src\test\resources\out\a221bc00-9d91-11ea-99ef-f828198890b5.dat
+2020-05-24 13:09:00,428 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.file.FileConnector - Writing file to: F:\R language & git\MulesoftSourceCode\splite\src\test\resources\out\a22390c0-9d91-11ea-99ef-f828198890b5.dat
+2020-05-24 13:09:00,446 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.file.FileConnector - Writing file to: F:\R language & git\MulesoftSourceCode\splite\src\test\resources\out\a2242d00-9d91-11ea-99ef-f828198890b5.dat
+2020-05-24 13:09:00,473 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.file.FileConnector - Writing file to: F:\R language & git\MulesoftSourceCode\splite\src\test\resources\out\a22a6e90-9d91-11ea-99ef-f828198890b5.dat
+2020-05-24 13:09:00,499 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.transport.file.FileConnector - Writing file to: F:\R language & git\MulesoftSourceCode\splite\src\test\resources\out\a22e6630-9d91-11ea-99ef-f828198890b5.dat
+2020-05-24 15:11:29,870 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'splite'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-24 15:11:30,359 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-24 15:11:30,384 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-24 15:11:30,717 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-24 15:11:31,073 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-24 15:11:31,073 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-24 15:11:31,465 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@d78795: startup date [Sun May 24 15:11:31 IST 2020]; root of context hierarchy
+2020-05-24 15:11:33,511 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-24 15:11:35,090 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-05-24 15:11:35,865 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\splite\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\splite\queue-tx-log\tx2.log
+2020-05-24 15:11:35,912 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\splite\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\splite\queue-xa-tx-log\tx2.log
+2020-05-24 15:11:35,912 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2020-05-24 15:11:36,349 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-24 15:11:36,359 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: splitterprojectFlow
+2020-05-24 15:11:36,359 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7235f92b
+2020-05-24 15:11:36,390 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: splitterprojectFlow.stage1
+2020-05-24 15:11:36,703 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\splite\splite.xml'}]"
+2020-05-24 15:11:36,703 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\splite\splite.xml'}]"
+2020-05-24 15:11:36,718 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-05-24 15:11:36,718 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'splite'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-24 15:11:36,734 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-24 15:11:36,734 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-24 15:11:36,765 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081/spli
+2020-05-24 15:11:36,765 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=56dd6efa
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-05-24 15:11:36,765 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=56dd6efa
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-05-24 15:11:36,765 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2020-05-24 15:11:36,781 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-24 15:11:36,781 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: splitterprojectFlow
+2020-05-24 15:11:36,781 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: splitterprojectFlow.stage1
+2020-05-24 15:11:36,843 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-24 15:11:36,875 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.splite:type=Connector,name="connector.file.mule.default"
+2020-05-24 15:11:36,875 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: splite                                                *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-24 15:12:48,227 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (POST)/vmrr/Req-Rep
+2020-05-24 15:12:48,227 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([post])/spli/splitter/]
+2020-05-24 15:14:07,003 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/vmrr/Req-Rep
+2020-05-24 15:14:07,003 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([post])/spli/splitter/]
+2020-05-24 15:15:18,292 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/vmrr/Req-Rep
+2020-05-24 15:15:18,292 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([post])/spli/splitter/]
+2020-05-24 15:19:18,473 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/vmrr/Req-Rep
+2020-05-24 15:19:18,473 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([post])/spli/splitter/]
+2020-05-24 15:20:12,259 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/vmrr/Req-Rep
+2020-05-24 15:20:12,259 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([post])/spli/splitter/]
+2020-05-24 15:20:54,619 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (GET)/vmrr/Req-Rep
+2020-05-24 15:20:54,619 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([post])/spli/splitter/]
+2020-05-24 15:21:01,287 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (POST)/vmrr/Req-Rep
+2020-05-24 15:21:01,287 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([post])/spli/splitter/]
+2020-05-24 15:21:03,137 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - No listener found for request: (POST)/vmrr/Req-Rep
+2020-05-24 15:21:03,137 [[splite].HTTP_Listener_Configuration.worker.01] INFO  org.mule.module.http.internal.listener.HttpListenerRegistry - Available listeners are: [([post])/spli/splitter/]
+2020-05-24 15:27:09,624 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'splite'                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-24 15:27:10,077 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-24 15:27:10,094 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-24 15:27:10,290 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-24 15:27:10,464 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-24 15:27:10,464 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-24 15:27:10,776 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@d78795: startup date [Sun May 24 15:27:10 IST 2020]; root of context hierarchy
+2020-05-24 15:27:12,969 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-24 15:27:14,594 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-05-24 15:27:15,158 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\splite\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\splite\queue-tx-log\tx2.log
+2020-05-24 15:27:15,186 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\splite\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\splite\queue-xa-tx-log\tx2.log
+2020-05-24 15:27:15,194 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising connector: connector.file.mule.default
+2020-05-24 15:27:15,656 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-24 15:27:15,659 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: splitterprojectFlow
+2020-05-24 15:27:15,663 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7235f92b
+2020-05-24 15:27:15,706 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: splitterprojectFlow.stage1
+2020-05-24 15:27:16,088 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\splite\splite.xml'}]"
+2020-05-24 15:27:16,088 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\splite\splite.xml'}]"
+2020-05-24 15:27:16,099 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-05-24 15:27:16,100 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'splite'                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-24 15:27:16,116 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-24 15:27:16,116 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-24 15:27:16,174 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://localhost:8081/spli
+2020-05-24 15:27:16,178 [main] INFO  org.mule.transport.file.FileConnector - Connected: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=56dd6efa
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-05-24 15:27:16,178 [main] INFO  org.mule.transport.file.FileConnector - Starting: FileConnector
+{
+  name=connector.file.mule.default
+  lifecycle=initialise
+  this=56dd6efa
+  numberOfConcurrentTransactedReceivers=4
+  createMultipleTransactedReceivers=true
+  connected=true
+  supportedProtocols=[file]
+  serviceOverrides=<none>
+}
+
+2020-05-24 15:27:16,179 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting connector: connector.file.mule.default
+2020-05-24 15:27:16,184 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-24 15:27:16,188 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: splitterprojectFlow
+2020-05-24 15:27:16,190 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: splitterprojectFlow.stage1
+2020-05-24 15:27:16,268 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-24 15:27:16,311 [main] INFO  org.mule.module.management.agent.AbstractJmxAgent - Registered Connector Service with name Mule.splite:type=Connector,name="connector.file.mule.default"
+2020-05-24 15:27:16,316 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: splite                                                *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************

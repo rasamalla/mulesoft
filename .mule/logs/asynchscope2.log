@@ -1,0 +1,1066 @@
+2020-05-29 17:12:44,967 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'asynchscope2'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:12:45,467 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-29 17:12:45,495 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-29 17:12:45,759 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-29 17:12:45,966 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-29 17:12:45,966 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-29 17:12:46,343 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@d78795: startup date [Fri May 29 17:12:46 IST 2020]; root of context hierarchy
+2020-05-29 17:12:50,411 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-29 17:12:52,716 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-05-29 17:12:53,907 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-tx-log\tx2.log
+2020-05-29 17:12:53,941 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-xa-tx-log\tx2.log
+2020-05-29 17:12:54,220 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-29 17:12:54,228 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batch-transactionalFlow
+2020-05-29 17:12:54,232 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@649f25f3
+2020-05-29 17:12:54,320 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: batch-transactionalFlow.stage1
+2020-05-29 17:12:54,344 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batch-transactionalBatch
+2020-05-29 17:12:54,344 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1de0641b
+2020-05-29 17:12:55,044 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\asynchscope2\asynchscope2.xml'}]"
+2020-05-29 17:12:55,044 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\asynchscope2\asynchscope2.xml'}]"
+2020-05-29 17:12:55,052 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-05-29 17:12:55,056 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'asynchscope2'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:12:55,086 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-29 17:12:55,087 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-29 17:12:55,186 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/batch
+2020-05-29 17:12:55,193 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-29 17:12:55,197 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batch-transactionalFlow
+2020-05-29 17:12:55,197 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: batch-transactionalFlow.stage1
+2020-05-29 17:12:55,205 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batch-transactionalBatch
+2020-05-29 17:12:55,405 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-29 17:12:55,446 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: asynchscope2                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-29 17:14:10,820 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - [{NAME=madison beer, ID=025, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}, {NAME=charlie xcx, ID=026, PLACE=united states, MARITAL_STATUS=single, EDUCATION=school,  BLOODGROUP=B+}, {NAME=maggie lawrence, ID=027, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}, {NAME=baby rehxa, ID=028, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}]
+2020-05-29 17:14:11,689 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance b6480040-a1a1-11ea-a160-f828198890b5 for batch job batch-transactionalBatch
+2020-05-29 17:14:11,692 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2020-05-29 17:14:11,694 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LogerInput: [{NAME=madison beer, ID=025, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}, {NAME=charlie xcx, ID=026, PLACE=united states, MARITAL_STATUS=single, EDUCATION=school,  BLOODGROUP=B+}, {NAME=maggie lawrence, ID=027, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}, {NAME=baby rehxa, ID=028, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}]
+2020-05-29 17:14:11,694 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2020-05-29 17:14:11,898 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance 'b6480040-a1a1-11ea-a160-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:14:11,990 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance b6480040-a1a1-11ea-a160-f828198890b5 of job batch-transactionalBatch. 4 records were loaded
+2020-05-29 17:14:12,009 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Started execution of instance 'b6480040-a1a1-11ea-a160-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:14:12,282 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Inside Batch size is::::::::::::6
+2020-05-29 17:14:12,282 [batch-job-batch-transactionalBatch-work-manager.16] INFO  org.mule.api.processor.LoggerMessageProcessor - Inside Batch size is::::::::::::6
+2020-05-29 17:14:12,415 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LoggerBatchStep: 2
+2020-05-29 17:14:12,577 [batch-job-batch-transactionalBatch-work-manager.01] INFO  com.mulesoft.module.batch.DefaultBatchStep - Found exception processing record on step 'Batch_Step' for job instance 'b6480040-a1a1-11ea-a160-f828198890b5' of job 'batch-transactionalBatch'.
+This is the first record to show this exception on this step for this job instance. Subsequent records with the same failureswill not be logged for performance and log readability reasons:
+
+********************************************************************************
+Message               : org.mule.module.db.internal.domain.connection.ConnectionCreationException: Error trying to load driver: oracle.jdbc.driver.OracleDriver : Cannot load class 'oracle.jdbc.driver.OracleDriver' (java.sql.SQLException)
+Payload               : [{NAME=baby rehxa, ID=028, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}, {NAME=madison beer, ID=025, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}]
+Payload Type          : com.mulesoft.module.batch.engine.commit.ImmutableRecordWrapperAwareList
+Element               : /Oracle_Configuration @ app:asynchscope2.xml:13 (Oracle Configuration)
+Element XML           : <db:insert config-ref="Oracle_Configuration" doc:name="Database">
+                        <db:parameterized-query>insert into persons (NAME,ID, PLACE,MARITAL_STATUS,EDUCATION,BLOODGROUP) values(#[payload.NAME], #[payload.ID], #[payload.PLACE],#[payload.MARITAL_STATUS],#[payload.EDUCATION],#[payload.BLOODGROUP])</db:parameterized-query>
+                        </db:insert>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.sql.SQLException: Error trying to load driver: oracle.jdbc.driver.OracleDriver : Cannot load class 'oracle.jdbc.driver.OracleDriver'
+	at org.enhydra.jdbc.standard.StandardDataSource.getConnection(StandardDataSource.java:184)
+	at org.enhydra.jdbc.standard.StandardDataSource.getConnection(StandardDataSource.java:144)
+	at org.mule.module.db.internal.domain.connection.SimpleConnectionFactory.doCreateConnection(SimpleConnectionFactory.java:43)
+	at org.mule.module.db.internal.domain.connection.AbstractConnectionFactory.create(AbstractConnectionFactory.java:35)
+	at org.mule.module.db.internal.domain.connection.TransactionalDbConnectionFactory.createDataSourceConnection(TransactionalDbConnectionFactory.java:84)
+	at org.mule.module.db.internal.domain.connection.TransactionalDbConnectionFactory.createConnection(TransactionalDbConnectionFactory.java:53)
+	at org.mule.module.db.internal.processor.AbstractDbMessageProcessor.process(AbstractDbMessageProcessor.java:72)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at com.mulesoft.module.batch.engine.BatchProcessingTemplate.process(BatchProcessingTemplate.java:91)
+	at com.mulesoft.module.batch.engine.buffer.CommitRecordBuffer.doFlush(CommitRecordBuffer.java:85)
+	at com.mulesoft.module.batch.engine.buffer.InMemoryRecordBuffer$BufferHolder.add(InMemoryRecordBuffer.java:224)
+	at com.mulesoft.module.batch.engine.buffer.InMemoryRecordBuffer$BufferHolder.access$1(InMemoryRecordBuffer.java:193)
+	at com.mulesoft.module.batch.engine.buffer.InMemoryRecordBuffer.add(InMemoryRecordBuffer.java:138)
+	at com.mulesoft.module.batch.BatchStepCommit.add(BatchStepCommit.java:136)
+	at com.mulesoft.module.batch.DefaultBatchStep.onRecord(DefaultBatchStep.java:279)
+	at com.mulesoft.module.batch.engine.threading.BatchRecordWork.run(BatchRecordWork.java:90)
+	at com.mulesoft.module.batch.engine.threading.DefaultBatchWorkManager$3.run(DefaultBatchWorkManager.java:182)
+	at org.mule.work.WorkerContext.run(WorkerContext.java:301)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+********************************************************************************
+
+2020-05-29 17:14:12,697 [batch-job-batch-transactionalBatch-work-manager.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - instance 'b6480040-a1a1-11ea-a160-f828198890b5' of job 'batch-transactionalBatch' has reached the max allowed number of failed records. Record will be added to failed list and the instance will be removed from execution pool
+2020-05-29 17:14:12,729 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Inside Batch size is::::::::::::6
+2020-05-29 17:14:12,730 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Inside Batch size is::::::::::::6
+2020-05-29 17:14:12,731 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LoggerBatchStep: 2
+2020-05-29 17:14:12,733 [batch-job-batch-transactionalBatch-work-manager.01] INFO  com.mulesoft.module.batch.DefaultBatchStep - Found exception processing record on step 'Batch_Step' for job instance 'b6480040-a1a1-11ea-a160-f828198890b5' of job 'batch-transactionalBatch'.
+This is the first record to show this exception on this step for this job instance. Subsequent records with the same failureswill not be logged for performance and log readability reasons:
+
+********************************************************************************
+Message               : org.mule.module.db.internal.domain.connection.ConnectionCreationException: Error trying to load driver: oracle.jdbc.driver.OracleDriver : Cannot load class 'oracle.jdbc.driver.OracleDriver' (java.sql.SQLException)
+Payload               : [{NAME=charlie xcx, ID=026, PLACE=united states, MARITAL_STATUS=single, EDUCATION=school,  BLOODGROUP=B+}, {NAME=maggie lawrence, ID=027, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}]
+Payload Type          : com.mulesoft.module.batch.engine.commit.ImmutableRecordWrapperAwareList
+Element               : /Oracle_Configuration @ app:asynchscope2.xml:13 (Oracle Configuration)
+Element XML           : <db:insert config-ref="Oracle_Configuration" doc:name="Database">
+                        <db:parameterized-query>insert into persons (NAME,ID, PLACE,MARITAL_STATUS,EDUCATION,BLOODGROUP) values(#[payload.NAME], #[payload.ID], #[payload.PLACE],#[payload.MARITAL_STATUS],#[payload.EDUCATION],#[payload.BLOODGROUP])</db:parameterized-query>
+                        </db:insert>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.sql.SQLException: Error trying to load driver: oracle.jdbc.driver.OracleDriver : Cannot load class 'oracle.jdbc.driver.OracleDriver'
+	at org.enhydra.jdbc.standard.StandardDataSource.getConnection(StandardDataSource.java:184)
+	at org.enhydra.jdbc.standard.StandardDataSource.getConnection(StandardDataSource.java:144)
+	at org.mule.module.db.internal.domain.connection.SimpleConnectionFactory.doCreateConnection(SimpleConnectionFactory.java:43)
+	at org.mule.module.db.internal.domain.connection.AbstractConnectionFactory.create(AbstractConnectionFactory.java:35)
+	at org.mule.module.db.internal.domain.connection.TransactionalDbConnectionFactory.createDataSourceConnection(TransactionalDbConnectionFactory.java:84)
+	at org.mule.module.db.internal.domain.connection.TransactionalDbConnectionFactory.createConnection(TransactionalDbConnectionFactory.java:53)
+	at org.mule.module.db.internal.processor.AbstractDbMessageProcessor.process(AbstractDbMessageProcessor.java:72)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at com.mulesoft.module.batch.engine.BatchProcessingTemplate.process(BatchProcessingTemplate.java:91)
+	at com.mulesoft.module.batch.engine.buffer.CommitRecordBuffer.doFlush(CommitRecordBuffer.java:85)
+	at com.mulesoft.module.batch.engine.buffer.InMemoryRecordBuffer$BufferHolder.add(InMemoryRecordBuffer.java:224)
+	at com.mulesoft.module.batch.engine.buffer.InMemoryRecordBuffer$BufferHolder.access$1(InMemoryRecordBuffer.java:193)
+	at com.mulesoft.module.batch.engine.buffer.InMemoryRecordBuffer.add(InMemoryRecordBuffer.java:138)
+	at com.mulesoft.module.batch.BatchStepCommit.add(BatchStepCommit.java:136)
+	at com.mulesoft.module.batch.DefaultBatchStep.onRecord(DefaultBatchStep.java:279)
+	at com.mulesoft.module.batch.engine.threading.BatchRecordWork.run(BatchRecordWork.java:90)
+	at com.mulesoft.module.batch.engine.threading.DefaultBatchWorkManager$3.run(DefaultBatchWorkManager.java:182)
+	at org.mule.work.WorkerContext.run(WorkerContext.java:301)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+********************************************************************************
+
+2020-05-29 17:14:12,738 [batch-job-batch-transactionalBatch-work-manager.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - instance 'b6480040-a1a1-11ea-a160-f828198890b5' of job 'batch-transactionalBatch' has reached the max allowed number of failed records. Record will be added to failed list and the instance will be removed from execution pool
+2020-05-29 17:14:12,755 [batch-job-batch-transactionalBatch-work-manager.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - instance 'b6480040-a1a1-11ea-a160-f828198890b5' of job 'batch-transactionalBatch' has reached the max allowed number of failed records. Record will be added to failed list and the instance will be removed from execution pool
+2020-05-29 17:14:12,850 [batch-job-batch-transactionalBatch-work-manager.01] INFO  com.mulesoft.module.batch.DefaultBatchStep - Step Batch_Step finished processing all records for instance b6480040-a1a1-11ea-a160-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:14:12,857 [pool-12-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+****************************************************************************************************************************************************************
+*             - - + Exception Type + - -             *                  - - + Step + - -                  *                 - - + Count + - -                  *
+****************************************************************************************************************************************************************
+* org.mule.api.MessagingException                    * Batch_Step                                         * 2                                                  *
+****************************************************************************************************************************************************************
+
+2020-05-29 17:14:12,857 [pool-12-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - instance b6480040-a1a1-11ea-a160-f828198890b5 of job batch-transactionalBatch has been stopped. Instance status is FAILED_PROCESS_RECORDS
+2020-05-29 17:14:12,857 [pool-12-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance b6480040-a1a1-11ea-a160-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:14:12,857 [pool-12-thread-1] INFO  org.mule.api.processor.LoggerMessageProcessor - BatchProcessing Completed
+2020-05-29 17:14:12,857 [pool-12-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance b6480040-a1a1-11ea-a160-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:18:01,210 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'asynchscope2'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:18:01,223 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: batch-transactionalFlow
+2020-05-29 17:18:01,224 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: batch-transactionalFlow.stage1
+2020-05-29 17:18:01,357 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: batch-transactionalBatch
+2020-05-29 17:18:01,360 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-29 17:18:01,374 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081/batch
+2020-05-29 17:18:01,376 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-29 17:18:01,376 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-29 17:18:01,383 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'asynchscope2'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:18:01,385 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-29 17:18:01,386 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: batch-transactionalFlow
+2020-05-29 17:18:01,393 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: batch-transactionalFlow.stage1
+2020-05-29 17:18:01,399 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: batch-transactionalBatch
+2020-05-29 17:18:01,402 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-29 17:18:01,886 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@d78795: startup date [Fri May 29 17:12:46 IST 2020]; root of context hierarchy
+2020-05-29 17:18:01,998 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "asynchscope2" shut down normally on: 29/5/20 5:18 PM  *
+* Up for: 0 days, 0 hours, 5 mins, 6.939 sec                         *
+**********************************************************************
+2020-05-29 17:18:02,486 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'asynchscope2'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:18:02,532 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-29 17:18:02,535 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-29 17:18:02,560 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-29 17:18:02,645 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-29 17:18:02,646 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-29 17:18:02,649 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@c0a4fff: startup date [Fri May 29 17:18:02 IST 2020]; root of context hierarchy
+2020-05-29 17:18:03,440 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-29 17:18:03,618 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-tx-log\tx2.log
+2020-05-29 17:18:03,622 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-xa-tx-log\tx2.log
+2020-05-29 17:18:03,633 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-29 17:18:03,638 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batch-transactionalFlow
+2020-05-29 17:18:03,638 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7e4aab1f
+2020-05-29 17:18:03,642 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: batch-transactionalFlow.stage1
+2020-05-29 17:18:03,642 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batch-transactionalBatch
+2020-05-29 17:18:03,642 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@17e24d03
+2020-05-29 17:18:03,672 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\asynchscope2\asynchscope2.xml'}]"
+2020-05-29 17:18:03,672 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\asynchscope2\asynchscope2.xml'}]"
+2020-05-29 17:18:03,672 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'asynchscope2'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:18:03,694 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-29 17:18:03,694 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-29 17:18:03,714 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/batch
+2020-05-29 17:18:03,718 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-29 17:18:03,720 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batch-transactionalFlow
+2020-05-29 17:18:03,720 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: batch-transactionalFlow.stage1
+2020-05-29 17:18:03,723 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batch-transactionalBatch
+2020-05-29 17:18:03,768 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-29 17:18:03,769 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: asynchscope2                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-29 17:18:23,847 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'asynchscope2'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:18:23,848 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: batch-transactionalFlow
+2020-05-29 17:18:23,848 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: batch-transactionalFlow.stage1
+2020-05-29 17:18:24,000 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: batch-transactionalBatch
+2020-05-29 17:18:24,002 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-29 17:18:24,006 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081/batch
+2020-05-29 17:18:24,007 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-29 17:18:24,008 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-29 17:18:24,011 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'asynchscope2'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:18:24,011 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-29 17:18:24,011 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: batch-transactionalFlow
+2020-05-29 17:18:24,012 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: batch-transactionalFlow.stage1
+2020-05-29 17:18:24,012 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: batch-transactionalBatch
+2020-05-29 17:18:24,013 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-29 17:18:24,044 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@c0a4fff: startup date [Fri May 29 17:18:02 IST 2020]; root of context hierarchy
+2020-05-29 17:18:24,053 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "asynchscope2" shut down normally on: 29/5/20 5:18 PM  *
+* Up for: 0 days, 0 hours, 0 mins, 20.381 sec                        *
+**********************************************************************
+2020-05-29 17:18:24,131 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'asynchscope2'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:18:24,148 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-29 17:18:24,154 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-29 17:18:24,181 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-29 17:18:24,220 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-29 17:18:24,221 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-29 17:18:24,228 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@36acbbd3: startup date [Fri May 29 17:18:24 IST 2020]; root of context hierarchy
+2020-05-29 17:18:24,722 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-29 17:18:24,890 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-tx-log\tx2.log
+2020-05-29 17:18:24,891 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-xa-tx-log\tx2.log
+2020-05-29 17:18:24,907 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-29 17:18:24,907 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batch-transactionalFlow
+2020-05-29 17:18:24,907 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@67de14d5
+2020-05-29 17:18:24,913 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: batch-transactionalFlow.stage1
+2020-05-29 17:18:24,919 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batch-transactionalBatch
+2020-05-29 17:18:24,919 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@162654db
+2020-05-29 17:18:24,945 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\asynchscope2\asynchscope2.xml'}]"
+2020-05-29 17:18:24,945 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\asynchscope2\asynchscope2.xml'}]"
+2020-05-29 17:18:24,953 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'asynchscope2'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:18:24,959 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-29 17:18:24,959 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-29 17:18:24,981 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/batch
+2020-05-29 17:18:24,984 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-29 17:18:24,992 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batch-transactionalFlow
+2020-05-29 17:18:24,992 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: batch-transactionalFlow.stage1
+2020-05-29 17:18:24,995 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batch-transactionalBatch
+2020-05-29 17:18:25,051 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-29 17:18:25,052 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: asynchscope2                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-29 17:18:53,677 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - [{NAME=madison beer, ID=025, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}, {NAME=charlie xcx, ID=026, PLACE=united states, MARITAL_STATUS=single, EDUCATION=school,  BLOODGROUP=B+}, {NAME=maggie lawrence, ID=027, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}, {NAME=baby rehxa, ID=028, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}]
+2020-05-29 17:18:53,723 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 5ee08dd0-a1a2-11ea-a160-f828198890b5 for batch job batch-transactionalBatch
+2020-05-29 17:18:53,723 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2020-05-29 17:18:53,728 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LogerInput: [{NAME=madison beer, ID=025, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}, {NAME=charlie xcx, ID=026, PLACE=united states, MARITAL_STATUS=single, EDUCATION=school,  BLOODGROUP=B+}, {NAME=maggie lawrence, ID=027, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}, {NAME=baby rehxa, ID=028, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}]
+2020-05-29 17:18:53,728 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2020-05-29 17:18:53,795 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '5ee08dd0-a1a2-11ea-a160-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:18:53,835 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 5ee08dd0-a1a2-11ea-a160-f828198890b5 of job batch-transactionalBatch. 4 records were loaded
+2020-05-29 17:18:53,840 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Started execution of instance '5ee08dd0-a1a2-11ea-a160-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:18:53,929 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Inside Batch size is::::::::::::6
+2020-05-29 17:18:53,943 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Inside Batch size is::::::::::::6
+2020-05-29 17:18:53,947 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LoggerBatchStep: 2
+2020-05-29 17:18:53,973 [batch-job-batch-transactionalBatch-work-manager.05] INFO  org.mule.api.processor.LoggerMessageProcessor - Inside Batch size is::::::::::::6
+2020-05-29 17:18:54,987 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - insert success
+2020-05-29 17:18:55,124 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Inside Batch size is::::::::::::6
+2020-05-29 17:18:55,125 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LoggerBatchStep: 2
+2020-05-29 17:18:55,217 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - insert success
+2020-05-29 17:18:55,324 [batch-job-batch-transactionalBatch-work-manager.01] INFO  com.mulesoft.module.batch.DefaultBatchStep - Step Batch_Step finished processing all records for instance 5ee08dd0-a1a2-11ea-a160-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:18:55,330 [pool-33-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 5ee08dd0-a1a2-11ea-a160-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:18:55,330 [pool-33-thread-1] INFO  org.mule.api.processor.LoggerMessageProcessor - BatchProcessing Completed
+2020-05-29 17:18:55,330 [pool-33-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 5ee08dd0-a1a2-11ea-a160-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:18:55,330 [pool-33-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2020-05-29 17:18:55,370 [pool-33-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '5ee08dd0-a1a2-11ea-a160-f828198890b5' of job 'batch-transactionalBatch'. Total Records processed: 4. Successful records: 4. Failed Records: 0
+2020-05-29 17:23:20,148 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - [{NAME=madison beer, ID=025, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}]
+2020-05-29 17:23:20,155 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance fdb4cd40-a1a2-11ea-a160-f828198890b5 for batch job batch-transactionalBatch
+2020-05-29 17:23:20,155 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2020-05-29 17:23:20,156 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LogerInput: [{NAME=madison beer, ID=025, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}]
+2020-05-29 17:23:20,156 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2020-05-29 17:23:20,198 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance 'fdb4cd40-a1a2-11ea-a160-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:23:20,236 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance fdb4cd40-a1a2-11ea-a160-f828198890b5 of job batch-transactionalBatch. 1 records were loaded
+2020-05-29 17:23:20,244 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Started execution of instance 'fdb4cd40-a1a2-11ea-a160-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:23:20,359 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Inside Batch size is::::::::::::6
+2020-05-29 17:23:20,376 [batch-job-batch-transactionalBatch-work-manager.01] INFO  com.mulesoft.module.batch.DefaultBatchStep - Step Batch_Step finished processing all records for instance fdb4cd40-a1a2-11ea-a160-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:23:20,377 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LoggerBatchStep: 1
+2020-05-29 17:23:20,400 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - insert success
+2020-05-29 17:23:20,437 [pool-33-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance fdb4cd40-a1a2-11ea-a160-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:23:20,437 [pool-33-thread-2] INFO  org.mule.api.processor.LoggerMessageProcessor - BatchProcessing Completed
+2020-05-29 17:23:20,438 [pool-33-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance fdb4cd40-a1a2-11ea-a160-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:23:20,438 [pool-33-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2020-05-29 17:23:20,493 [pool-33-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance 'fdb4cd40-a1a2-11ea-a160-f828198890b5' of job 'batch-transactionalBatch'. Total Records processed: 1. Successful records: 1. Failed Records: 0
+2020-05-29 17:24:51,616 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - [{NAME=madison beer, ID=025, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}]
+2020-05-29 17:24:51,631 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 343a7950-a1a3-11ea-a160-f828198890b5 for batch job batch-transactionalBatch
+2020-05-29 17:24:51,631 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2020-05-29 17:24:51,632 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LogerInput: [{NAME=madison beer, ID=025, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school,  BLOODGROUP=A+}]
+2020-05-29 17:24:51,632 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2020-05-29 17:24:51,662 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '343a7950-a1a3-11ea-a160-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:24:51,717 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 343a7950-a1a3-11ea-a160-f828198890b5 of job batch-transactionalBatch. 1 records were loaded
+2020-05-29 17:24:51,728 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Started execution of instance '343a7950-a1a3-11ea-a160-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:24:51,806 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Inside Batch size is::::::::::::6
+2020-05-29 17:24:51,825 [batch-job-batch-transactionalBatch-work-manager.01] INFO  com.mulesoft.module.batch.DefaultBatchStep - Step Batch_Step finished processing all records for instance 343a7950-a1a3-11ea-a160-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:24:51,826 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LoggerBatchStep: 1
+2020-05-29 17:24:51,859 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - insert success
+2020-05-29 17:24:51,888 [pool-33-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 343a7950-a1a3-11ea-a160-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:24:51,889 [pool-33-thread-3] INFO  org.mule.api.processor.LoggerMessageProcessor - BatchProcessing Completed
+2020-05-29 17:24:51,889 [pool-33-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 343a7950-a1a3-11ea-a160-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:24:51,889 [pool-33-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2020-05-29 17:24:52,004 [pool-33-thread-3] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '343a7950-a1a3-11ea-a160-f828198890b5' of job 'batch-transactionalBatch'. Total Records processed: 1. Successful records: 1. Failed Records: 0
+2020-05-29 17:27:51,819 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - [{NAME=madison beer, ID=025, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school, BLOODGROUP=A+}]
+2020-05-29 17:27:51,837 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 9fa281b0-a1a3-11ea-a160-f828198890b5 for batch job batch-transactionalBatch
+2020-05-29 17:27:51,837 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2020-05-29 17:27:51,838 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LogerInput: [{NAME=madison beer, ID=025, PLACE=united states, MARITAL_STATUS=single, EDUCATION=high school, BLOODGROUP=A+}]
+2020-05-29 17:27:51,838 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2020-05-29 17:27:51,880 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '9fa281b0-a1a3-11ea-a160-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:27:52,002 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 9fa281b0-a1a3-11ea-a160-f828198890b5 of job batch-transactionalBatch. 1 records were loaded
+2020-05-29 17:27:52,020 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Started execution of instance '9fa281b0-a1a3-11ea-a160-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:27:52,085 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Inside Batch size is::::::::::::6
+2020-05-29 17:27:52,110 [batch-job-batch-transactionalBatch-work-manager.01] INFO  com.mulesoft.module.batch.DefaultBatchStep - Step Batch_Step finished processing all records for instance 9fa281b0-a1a3-11ea-a160-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:27:52,112 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LoggerBatchStep: 1
+2020-05-29 17:27:52,175 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - insert success
+2020-05-29 17:27:52,211 [pool-33-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 9fa281b0-a1a3-11ea-a160-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:27:52,214 [pool-33-thread-4] INFO  org.mule.api.processor.LoggerMessageProcessor - BatchProcessing Completed
+2020-05-29 17:27:52,214 [pool-33-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 9fa281b0-a1a3-11ea-a160-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:27:52,214 [pool-33-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2020-05-29 17:27:52,278 [pool-33-thread-4] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '9fa281b0-a1a3-11ea-a160-f828198890b5' of job 'batch-transactionalBatch'. Total Records processed: 1. Successful records: 1. Failed Records: 0
+2020-05-29 17:39:18,945 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'asynchscope2'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:39:19,376 [main] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-29 17:39:19,390 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-29 17:39:19,607 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-29 17:39:19,783 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-29 17:39:19,783 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-29 17:39:20,112 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@72b16078: startup date [Fri May 29 17:39:20 IST 2020]; root of context hierarchy
+2020-05-29 17:39:22,394 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-29 17:39:24,070 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2020-05-29 17:39:24,759 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-tx-log\tx2.log
+2020-05-29 17:39:24,804 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-xa-tx-log\tx2.log
+2020-05-29 17:39:24,951 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-29 17:39:24,958 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batch-transactionalFlow
+2020-05-29 17:39:24,958 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3a401749
+2020-05-29 17:39:25,011 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: batch-transactionalFlow.stage1
+2020-05-29 17:39:25,032 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batch-transactionalBatch
+2020-05-29 17:39:25,032 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3513c84c
+2020-05-29 17:39:25,423 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\asynchscope2\asynchscope2.xml'}]"
+2020-05-29 17:39:25,423 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\asynchscope2\asynchscope2.xml'}]"
+2020-05-29 17:39:25,432 [main] INFO  com.mulesoft.module.policies.lifecyle.GateKeeper - GateKeeper Mode: DISABLED
+2020-05-29 17:39:25,433 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'asynchscope2'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:39:25,443 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-29 17:39:25,443 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-29 17:39:25,520 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/batch
+2020-05-29 17:39:25,526 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-29 17:39:25,531 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batch-transactionalFlow
+2020-05-29 17:39:25,531 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: batch-transactionalFlow.stage1
+2020-05-29 17:39:25,536 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batch-transactionalBatch
+2020-05-29 17:39:26,210 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-29 17:39:26,301 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: asynchscope2                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-29 17:39:36,930 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - [{NAME=madisonbeer, ID=025, PLACE=unitedstates, MARITAL_STATUS=single, EDUCATION=highschool, BLOODGROUP=A+}]
+2020-05-29 17:39:36,990 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 43ea0f30-a1a5-11ea-a76b-f828198890b5 for batch job batch-transactionalBatch
+2020-05-29 17:39:36,994 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2020-05-29 17:39:36,997 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LogerInput: [{NAME=madisonbeer, ID=025, PLACE=unitedstates, MARITAL_STATUS=single, EDUCATION=highschool, BLOODGROUP=A+}]
+2020-05-29 17:39:36,997 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2020-05-29 17:39:37,049 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '43ea0f30-a1a5-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:39:37,149 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 43ea0f30-a1a5-11ea-a76b-f828198890b5 of job batch-transactionalBatch. 1 records were loaded
+2020-05-29 17:39:37,157 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Started execution of instance '43ea0f30-a1a5-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:39:37,381 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Inside Batch size is::::::::::::6
+2020-05-29 17:39:37,433 [batch-job-batch-transactionalBatch-work-manager.01] INFO  com.mulesoft.module.batch.DefaultBatchStep - Step Batch_Step finished processing all records for instance 43ea0f30-a1a5-11ea-a76b-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:39:37,451 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LoggerBatchStep: 1
+2020-05-29 17:39:38,288 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - insert success
+2020-05-29 17:39:38,345 [pool-12-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 43ea0f30-a1a5-11ea-a76b-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:39:38,347 [pool-12-thread-1] INFO  org.mule.api.processor.LoggerMessageProcessor - BatchProcessing Completed
+2020-05-29 17:39:38,347 [pool-12-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 43ea0f30-a1a5-11ea-a76b-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:39:38,348 [pool-12-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2020-05-29 17:39:38,404 [pool-12-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '43ea0f30-a1a5-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'. Total Records processed: 1. Successful records: 1. Failed Records: 0
+2020-05-29 17:42:16,579 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'asynchscope2'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:42:16,582 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: batch-transactionalFlow
+2020-05-29 17:42:16,583 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: batch-transactionalFlow.stage1
+2020-05-29 17:42:16,737 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: batch-transactionalBatch
+2020-05-29 17:42:16,740 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-29 17:42:16,748 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081/batch
+2020-05-29 17:42:16,750 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-29 17:42:16,750 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-29 17:42:16,756 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'asynchscope2'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:42:16,758 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-29 17:42:16,761 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: batch-transactionalFlow
+2020-05-29 17:42:16,762 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: batch-transactionalFlow.stage1
+2020-05-29 17:42:16,765 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: batch-transactionalBatch
+2020-05-29 17:42:16,769 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-29 17:42:16,922 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@72b16078: startup date [Fri May 29 17:39:20 IST 2020]; root of context hierarchy
+2020-05-29 17:42:16,949 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "asynchscope2" shut down normally on: 29/5/20 5:42 PM  *
+* Up for: 0 days, 0 hours, 2 mins, 51.512 sec                        *
+**********************************************************************
+2020-05-29 17:42:17,181 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'asynchscope2'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:42:17,372 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-29 17:42:17,381 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-29 17:42:17,394 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-29 17:42:17,425 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-29 17:42:17,426 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-29 17:42:17,431 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@5b8e1c8f: startup date [Fri May 29 17:42:17 IST 2020]; root of context hierarchy
+2020-05-29 17:42:19,220 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-29 17:42:19,450 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-tx-log\tx2.log
+2020-05-29 17:42:19,454 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-xa-tx-log\tx2.log
+2020-05-29 17:42:19,470 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-29 17:42:19,472 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batch-transactionalFlow
+2020-05-29 17:42:19,474 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3eaf9268
+2020-05-29 17:42:19,482 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: batch-transactionalFlow.stage1
+2020-05-29 17:42:19,483 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batch-transactionalBatch
+2020-05-29 17:42:19,483 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@25118d31
+2020-05-29 17:42:19,526 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\asynchscope2\asynchscope2.xml'}]"
+2020-05-29 17:42:19,526 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\asynchscope2\asynchscope2.xml'}]"
+2020-05-29 17:42:19,529 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'asynchscope2'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:42:19,533 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-29 17:42:19,534 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-29 17:42:19,547 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/batch
+2020-05-29 17:42:19,552 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-29 17:42:19,555 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batch-transactionalFlow
+2020-05-29 17:42:19,555 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: batch-transactionalFlow.stage1
+2020-05-29 17:42:19,568 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batch-transactionalBatch
+2020-05-29 17:42:19,652 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-29 17:42:19,661 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: asynchscope2                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-29 17:42:25,727 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - [{NAME=madisonbeer, ID=025, PLACE=unitedstates, MARITAL_STATUS=single, EDUCATION=highschool, BLOODGROUP=A+}]
+2020-05-29 17:42:25,777 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance a8867000-a1a5-11ea-a76b-f828198890b5 for batch job batch-transactionalBatch
+2020-05-29 17:42:25,777 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2020-05-29 17:42:25,782 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LogerInput: [{NAME=madisonbeer, ID=025, PLACE=unitedstates, MARITAL_STATUS=single, EDUCATION=highschool, BLOODGROUP=A+}]
+2020-05-29 17:42:25,782 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2020-05-29 17:42:25,828 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance 'a8867000-a1a5-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:42:25,894 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance a8867000-a1a5-11ea-a76b-f828198890b5 of job batch-transactionalBatch. 1 records were loaded
+2020-05-29 17:42:25,912 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Started execution of instance 'a8867000-a1a5-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:42:26,088 [batch-job-batch-transactionalBatch-work-manager.08] INFO  org.mule.api.processor.LoggerMessageProcessor - Inside Batch size is::::::::::::6
+2020-05-29 17:42:26,159 [batch-job-batch-transactionalBatch-work-manager.08] INFO  com.mulesoft.module.batch.DefaultBatchStep - Step Batch_Step finished processing all records for instance a8867000-a1a5-11ea-a76b-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:42:26,159 [batch-job-batch-transactionalBatch-work-manager.08] INFO  org.mule.api.processor.LoggerMessageProcessor - LoggerBatchStep: 1
+2020-05-29 17:42:26,323 [batch-job-batch-transactionalBatch-work-manager.08] INFO  com.mulesoft.module.batch.DefaultBatchStep - Found exception processing record on step 'Batch_Step' for job instance 'a8867000-a1a5-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'.
+This is the first record to show this exception on this step for this job instance. Subsequent records with the same failureswill not be logged for performance and log readability reasons:
+
+********************************************************************************
+Message               : Failed to transform from "json" to "org.mule.module.json.JsonData"
+Payload               : [{NAME=madisonbeer, ID=025, PLACE=unitedstates, MARITAL_STATUS=single, EDUCATION=highschool, BLOODGROUP=A+}]
+Transformer           : JsonToObject{this=57a4e610, name='JsonToJsonData', ignoreBadInput=false, returnClass=SimpleDataType{type=org.mule.module.json.JsonData, mimeType='application/json', encoding='null'}, sourceTypes=[SimpleDataType{type=java.io.Reader, mimeType='*/*', encoding='null'}, SimpleDataType{type=java.net.URL, mimeType='*/*', encoding='null'}, SimpleDataType{type=java.io.File, mimeType='*/*', encoding='null'}, SimpleDataType{type=java.lang.String, mimeType='*/*', encoding='null'}, SimpleDataType{type=java.io.InputStream, mimeType='*/*', encoding='null'}, SimpleDataType{type=[B, mimeType='*/*', encoding='null'}]}
+Payload Type          : java.lang.String
+Element               : /batch-transactionalBatch/process-records/0/1/1 @ asynchscope2:asynchscope2.xml:36 (JSON to Object)
+Element XML           : <json:json-to-object-transformer doc:name="JSON to Object"></json:json-to-object-transformer>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+org.codehaus.jackson.JsonParseException: Unexpected character ('N' (code 78)): was expecting double-quote to start field name
+ at [Source: java.io.StringReader@5040bf52; line: 1, column: 4]
+	at org.codehaus.jackson.JsonParser._constructError(JsonParser.java:1433)
+	at org.codehaus.jackson.impl.JsonParserMinimalBase._reportError(JsonParserMinimalBase.java:521)
+	at org.codehaus.jackson.impl.JsonParserMinimalBase._reportUnexpectedChar(JsonParserMinimalBase.java:442)
+	at org.codehaus.jackson.impl.ReaderBasedParser._handleUnusualFieldName(ReaderBasedParser.java:1084)
+	at org.codehaus.jackson.impl.ReaderBasedParser._parseFieldName(ReaderBasedParser.java:977)
+	at org.codehaus.jackson.impl.ReaderBasedParser.nextToken(ReaderBasedParser.java:418)
+	at org.codehaus.jackson.map.deser.std.BaseNodeDeserializer.deserializeObject(JsonNodeDeserializer.java:190)
+	at org.codehaus.jackson.map.deser.std.BaseNodeDeserializer.deserializeArray(JsonNodeDeserializer.java:224)
+	at org.codehaus.jackson.map.deser.std.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:60)
+	at org.codehaus.jackson.map.deser.std.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:15)
+	at org.codehaus.jackson.map.ObjectMapper._readMapAndClose(ObjectMapper.java:2732)
+	at org.codehaus.jackson.map.ObjectMapper.readTree(ObjectMapper.java:1526)
+	at org.mule.module.json.JsonData.<init>(JsonData.java:74)
+	at org.mule.module.json.JsonData.<init>(JsonData.java:79)
+	at org.mule.module.json.transformers.JsonToObject.transformMessage(JsonToObject.java:110)
+	at org.mule.transformer.AbstractMessageTransformer.transform(AbstractMessageTransformer.java:141)
+	at org.mule.transformer.AbstractMessageTransformer.transform(AbstractMessageTransformer.java:89)
+	at org.mule.DefaultMuleMessage.transformMessage(DefaultMuleMessage.java:1643)
+	at org.mule.DefaultMuleMessage.applyAllTransformers(DefaultMuleMessage.java:1572)
+	at org.mule.DefaultMuleMessage.applyTransformers(DefaultMuleMessage.java:1520)
+	at org.mule.DefaultMuleMessage.applyTransformers(DefaultMuleMessage.java:1512)
+	at org.mule.transformer.AbstractTransformer.process(AbstractTransformer.java:114)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at com.mulesoft.module.batch.engine.BatchProcessingTemplate.process(BatchProcessingTemplate.java:91)
+	at com.mulesoft.module.batch.engine.buffer.CommitRecordBuffer.doFlush(CommitRecordBuffer.java:85)
+	at com.mulesoft.module.batch.engine.buffer.InMemoryRecordBuffer.flush(InMemoryRecordBuffer.java:91)
+	at com.mulesoft.module.batch.engine.buffer.InMemoryRecordBuffer.flushAndForget(InMemoryRecordBuffer.java:112)
+	at com.mulesoft.module.batch.BatchStepCommit.flush(BatchStepCommit.java:118)
+	at com.mulesoft.module.batch.DefaultBatchStep.flushCommit(DefaultBatchStep.java:373)
+	at com.mulesoft.module.batch.DefaultBatchStep.finishIfCompleted(DefaultBatchStep.java:336)
+	at com.mulesoft.module.batch.engine.threading.BatchRecordWork.run(BatchRecordWork.java:101)
+	at com.mulesoft.module.batch.engine.threading.DefaultBatchWorkManager$3.run(DefaultBatchWorkManager.java:182)
+	at org.mule.work.WorkerContext.run(WorkerContext.java:301)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+********************************************************************************
+
+2020-05-29 17:42:26,370 [pool-23-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance a8867000-a1a5-11ea-a76b-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:42:26,370 [pool-23-thread-1] INFO  org.mule.api.processor.LoggerMessageProcessor - BatchProcessing Completed
+2020-05-29 17:42:26,370 [pool-23-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance a8867000-a1a5-11ea-a76b-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:42:26,375 [pool-23-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+****************************************************************************************************************************************************************
+*             - - + Exception Type + - -             *                  - - + Step + - -                  *                 - - + Count + - -                  *
+****************************************************************************************************************************************************************
+* org.mule.api.transformer.TransformerMessagingExcep * Batch_Step                                         * 1                                                  *
+****************************************************************************************************************************************************************
+
+2020-05-29 17:42:26,434 [pool-23-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance 'a8867000-a1a5-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'. Total Records processed: 1. Successful records: 0. Failed Records: 1
+2020-05-29 17:45:26,945 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - [{NAME=madisonbeer, ID=025, PLACE=unitedstates, MARITAL_STATUS=single, EDUCATION=highschool, BLOODGROUP=A+}]
+2020-05-29 17:45:26,956 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 148a9150-a1a6-11ea-a76b-f828198890b5 for batch job batch-transactionalBatch
+2020-05-29 17:45:26,956 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2020-05-29 17:45:26,956 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LogerInput: [{NAME=madisonbeer, ID=025, PLACE=unitedstates, MARITAL_STATUS=single, EDUCATION=highschool, BLOODGROUP=A+}]
+2020-05-29 17:45:26,956 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2020-05-29 17:45:27,003 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '148a9150-a1a6-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:45:27,067 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 148a9150-a1a6-11ea-a76b-f828198890b5 of job batch-transactionalBatch. 1 records were loaded
+2020-05-29 17:45:27,073 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Started execution of instance '148a9150-a1a6-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:45:27,112 [batch-job-batch-transactionalBatch-work-manager.08] INFO  org.mule.api.processor.LoggerMessageProcessor - Inside Batch size is::::::::::::6
+2020-05-29 17:45:27,144 [batch-job-batch-transactionalBatch-work-manager.08] INFO  com.mulesoft.module.batch.DefaultBatchStep - Step Batch_Step finished processing all records for instance 148a9150-a1a6-11ea-a76b-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:45:27,146 [batch-job-batch-transactionalBatch-work-manager.08] INFO  org.mule.api.processor.LoggerMessageProcessor - LoggerBatchStep: 1
+2020-05-29 17:45:27,154 [batch-job-batch-transactionalBatch-work-manager.08] INFO  com.mulesoft.module.batch.DefaultBatchStep - Found exception processing record on step 'Batch_Step' for job instance '148a9150-a1a6-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'.
+This is the first record to show this exception on this step for this job instance. Subsequent records with the same failureswill not be logged for performance and log readability reasons:
+
+********************************************************************************
+Message               : Failed to transform from "json" to "org.mule.module.json.JsonData"
+Payload               : [{NAME=madisonbeer, ID=025, PLACE=unitedstates, MARITAL_STATUS=single, EDUCATION=highschool, BLOODGROUP=A+}]
+Transformer           : JsonToObject{this=57a4e610, name='JsonToJsonData', ignoreBadInput=false, returnClass=SimpleDataType{type=org.mule.module.json.JsonData, mimeType='application/json', encoding='null'}, sourceTypes=[SimpleDataType{type=java.io.Reader, mimeType='*/*', encoding='null'}, SimpleDataType{type=java.net.URL, mimeType='*/*', encoding='null'}, SimpleDataType{type=java.io.File, mimeType='*/*', encoding='null'}, SimpleDataType{type=java.lang.String, mimeType='*/*', encoding='null'}, SimpleDataType{type=java.io.InputStream, mimeType='*/*', encoding='null'}, SimpleDataType{type=[B, mimeType='*/*', encoding='null'}]}
+Payload Type          : java.lang.String
+Element               : /batch-transactionalBatch/process-records/0/1/1 @ asynchscope2:asynchscope2.xml:36 (JSON to Object)
+Element XML           : <json:json-to-object-transformer doc:name="JSON to Object"></json:json-to-object-transformer>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+org.codehaus.jackson.JsonParseException: Unexpected character ('N' (code 78)): was expecting double-quote to start field name
+ at [Source: java.io.StringReader@3dc6cf3; line: 1, column: 4]
+	at org.codehaus.jackson.JsonParser._constructError(JsonParser.java:1433)
+	at org.codehaus.jackson.impl.JsonParserMinimalBase._reportError(JsonParserMinimalBase.java:521)
+	at org.codehaus.jackson.impl.JsonParserMinimalBase._reportUnexpectedChar(JsonParserMinimalBase.java:442)
+	at org.codehaus.jackson.impl.ReaderBasedParser._handleUnusualFieldName(ReaderBasedParser.java:1084)
+	at org.codehaus.jackson.impl.ReaderBasedParser._parseFieldName(ReaderBasedParser.java:977)
+	at org.codehaus.jackson.impl.ReaderBasedParser.nextToken(ReaderBasedParser.java:418)
+	at org.codehaus.jackson.map.deser.std.BaseNodeDeserializer.deserializeObject(JsonNodeDeserializer.java:190)
+	at org.codehaus.jackson.map.deser.std.BaseNodeDeserializer.deserializeArray(JsonNodeDeserializer.java:224)
+	at org.codehaus.jackson.map.deser.std.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:60)
+	at org.codehaus.jackson.map.deser.std.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:15)
+	at org.codehaus.jackson.map.ObjectMapper._readMapAndClose(ObjectMapper.java:2732)
+	at org.codehaus.jackson.map.ObjectMapper.readTree(ObjectMapper.java:1526)
+	at org.mule.module.json.JsonData.<init>(JsonData.java:74)
+	at org.mule.module.json.JsonData.<init>(JsonData.java:79)
+	at org.mule.module.json.transformers.JsonToObject.transformMessage(JsonToObject.java:110)
+	at org.mule.transformer.AbstractMessageTransformer.transform(AbstractMessageTransformer.java:141)
+	at org.mule.transformer.AbstractMessageTransformer.transform(AbstractMessageTransformer.java:89)
+	at org.mule.DefaultMuleMessage.transformMessage(DefaultMuleMessage.java:1643)
+	at org.mule.DefaultMuleMessage.applyAllTransformers(DefaultMuleMessage.java:1572)
+	at org.mule.DefaultMuleMessage.applyTransformers(DefaultMuleMessage.java:1520)
+	at org.mule.DefaultMuleMessage.applyTransformers(DefaultMuleMessage.java:1512)
+	at org.mule.transformer.AbstractTransformer.process(AbstractTransformer.java:114)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at com.mulesoft.module.batch.engine.BatchProcessingTemplate.process(BatchProcessingTemplate.java:91)
+	at com.mulesoft.module.batch.engine.buffer.CommitRecordBuffer.doFlush(CommitRecordBuffer.java:85)
+	at com.mulesoft.module.batch.engine.buffer.InMemoryRecordBuffer.flush(InMemoryRecordBuffer.java:91)
+	at com.mulesoft.module.batch.engine.buffer.InMemoryRecordBuffer.flushAndForget(InMemoryRecordBuffer.java:112)
+	at com.mulesoft.module.batch.BatchStepCommit.flush(BatchStepCommit.java:118)
+	at com.mulesoft.module.batch.DefaultBatchStep.flushCommit(DefaultBatchStep.java:373)
+	at com.mulesoft.module.batch.DefaultBatchStep.finishIfCompleted(DefaultBatchStep.java:336)
+	at com.mulesoft.module.batch.engine.threading.BatchRecordWork.run(BatchRecordWork.java:101)
+	at com.mulesoft.module.batch.engine.threading.DefaultBatchWorkManager$3.run(DefaultBatchWorkManager.java:182)
+	at org.mule.work.WorkerContext.run(WorkerContext.java:301)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+********************************************************************************
+
+2020-05-29 17:45:27,192 [pool-23-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 148a9150-a1a6-11ea-a76b-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:45:27,194 [pool-23-thread-2] INFO  org.mule.api.processor.LoggerMessageProcessor - BatchProcessing Completed
+2020-05-29 17:45:27,194 [pool-23-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 148a9150-a1a6-11ea-a76b-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:45:27,194 [pool-23-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+****************************************************************************************************************************************************************
+*             - - + Exception Type + - -             *                  - - + Step + - -                  *                 - - + Count + - -                  *
+****************************************************************************************************************************************************************
+* org.mule.api.transformer.TransformerMessagingExcep * Batch_Step                                         * 1                                                  *
+****************************************************************************************************************************************************************
+
+2020-05-29 17:45:27,254 [pool-23-thread-2] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '148a9150-a1a6-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'. Total Records processed: 1. Successful records: 0. Failed Records: 1
+2020-05-29 17:46:25,016 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'asynchscope2'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:46:25,018 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: batch-transactionalFlow
+2020-05-29 17:46:25,018 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: batch-transactionalFlow.stage1
+2020-05-29 17:46:25,214 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: batch-transactionalBatch
+2020-05-29 17:46:25,239 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-29 17:46:25,255 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081/batch
+2020-05-29 17:46:25,258 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-29 17:46:25,261 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-29 17:46:25,289 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'asynchscope2'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:46:25,291 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-29 17:46:25,295 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: batch-transactionalFlow
+2020-05-29 17:46:25,296 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: batch-transactionalFlow.stage1
+2020-05-29 17:46:25,301 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: batch-transactionalBatch
+2020-05-29 17:46:25,304 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-29 17:46:25,374 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@5b8e1c8f: startup date [Fri May 29 17:42:17 IST 2020]; root of context hierarchy
+2020-05-29 17:46:25,410 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "asynchscope2" shut down normally on: 29/5/20 5:46 PM  *
+* Up for: 0 days, 0 hours, 4 mins, 5.876 sec                         *
+**********************************************************************
+2020-05-29 17:46:25,646 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'asynchscope2'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:46:25,658 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-29 17:46:25,663 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-29 17:46:25,669 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-29 17:46:25,690 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-29 17:46:25,690 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-29 17:46:25,697 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@63e0bc41: startup date [Fri May 29 17:46:25 IST 2020]; root of context hierarchy
+2020-05-29 17:46:26,098 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-29 17:46:26,346 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-tx-log\tx2.log
+2020-05-29 17:46:26,349 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-xa-tx-log\tx2.log
+2020-05-29 17:46:26,359 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-29 17:46:26,361 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batch-transactionalFlow
+2020-05-29 17:46:26,361 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1509df5a
+2020-05-29 17:46:26,369 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: batch-transactionalFlow.stage1
+2020-05-29 17:46:26,370 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batch-transactionalBatch
+2020-05-29 17:46:26,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@13c708b9
+2020-05-29 17:46:26,401 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\asynchscope2\asynchscope2.xml'}]"
+2020-05-29 17:46:26,401 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\asynchscope2\asynchscope2.xml'}]"
+2020-05-29 17:46:26,410 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'asynchscope2'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:46:26,416 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-29 17:46:26,416 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-29 17:46:26,443 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/batch
+2020-05-29 17:46:26,450 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-29 17:46:26,454 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batch-transactionalFlow
+2020-05-29 17:46:26,455 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: batch-transactionalFlow.stage1
+2020-05-29 17:46:26,466 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batch-transactionalBatch
+2020-05-29 17:46:26,541 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-29 17:46:26,551 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: asynchscope2                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-29 17:46:35,395 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - [{NAME=madisonbeer, ID=025, PLACE=unitedstates, MARITAL_STATUS=single, EDUCATION=highschool, BLOODGROUP=A+}]
+2020-05-29 17:46:35,436 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 3d56c040-a1a6-11ea-a76b-f828198890b5 for batch job batch-transactionalBatch
+2020-05-29 17:46:35,436 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2020-05-29 17:46:35,438 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LogerInput: [{NAME=madisonbeer, ID=025, PLACE=unitedstates, MARITAL_STATUS=single, EDUCATION=highschool, BLOODGROUP=A+}]
+2020-05-29 17:46:35,438 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2020-05-29 17:46:35,489 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '3d56c040-a1a6-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:46:35,546 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 3d56c040-a1a6-11ea-a76b-f828198890b5 of job batch-transactionalBatch. 1 records were loaded
+2020-05-29 17:46:35,551 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Started execution of instance '3d56c040-a1a6-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:46:35,639 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Inside Batch size is::::::::::::6
+2020-05-29 17:46:35,681 [batch-job-batch-transactionalBatch-work-manager.01] INFO  com.mulesoft.module.batch.DefaultBatchStep - Step Batch_Step finished processing all records for instance 3d56c040-a1a6-11ea-a76b-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:46:35,682 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LoggerBatchStep: 1
+2020-05-29 17:46:36,676 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - insert success
+2020-05-29 17:46:36,703 [pool-34-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 3d56c040-a1a6-11ea-a76b-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:46:36,703 [pool-34-thread-1] INFO  org.mule.api.processor.LoggerMessageProcessor - BatchProcessing Completed
+2020-05-29 17:46:36,703 [pool-34-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 3d56c040-a1a6-11ea-a76b-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:46:36,703 [pool-34-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2020-05-29 17:46:36,762 [pool-34-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '3d56c040-a1a6-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'. Total Records processed: 1. Successful records: 1. Failed Records: 0
+2020-05-29 17:51:27,285 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'asynchscope2'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:51:27,289 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: batch-transactionalFlow
+2020-05-29 17:51:27,289 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: batch-transactionalFlow.stage1
+2020-05-29 17:51:27,425 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: batch-transactionalBatch
+2020-05-29 17:51:27,429 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-29 17:51:27,446 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081/batch
+2020-05-29 17:51:27,447 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-29 17:51:27,449 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-29 17:51:27,458 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'asynchscope2'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:51:27,460 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-29 17:51:27,464 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: batch-transactionalFlow
+2020-05-29 17:51:27,464 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: batch-transactionalFlow.stage1
+2020-05-29 17:51:27,464 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: batch-transactionalBatch
+2020-05-29 17:51:27,465 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-29 17:51:27,484 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@63e0bc41: startup date [Fri May 29 17:46:25 IST 2020]; root of context hierarchy
+2020-05-29 17:51:27,491 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "asynchscope2" shut down normally on: 29/5/20 5:51 PM  *
+* Up for: 0 days, 0 hours, 5 mins, 1.77 sec                          *
+**********************************************************************
+2020-05-29 17:51:27,611 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'asynchscope2'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:51:27,615 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-29 17:51:27,621 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-29 17:51:27,630 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-29 17:51:27,639 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-29 17:51:27,639 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-29 17:51:27,654 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@34249b1e: startup date [Fri May 29 17:51:27 IST 2020]; root of context hierarchy
+2020-05-29 17:51:27,997 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-29 17:51:28,153 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-tx-log\tx2.log
+2020-05-29 17:51:28,156 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-xa-tx-log\tx2.log
+2020-05-29 17:51:28,166 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-29 17:51:28,167 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batch-transactionalFlow
+2020-05-29 17:51:28,167 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2b86e8c5
+2020-05-29 17:51:28,172 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: batch-transactionalFlow.stage1
+2020-05-29 17:51:28,176 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batch-transactionalBatch
+2020-05-29 17:51:28,177 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@525df190
+2020-05-29 17:51:28,203 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\asynchscope2\asynchscope2.xml'}]"
+2020-05-29 17:51:28,203 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\asynchscope2\asynchscope2.xml'}]"
+2020-05-29 17:51:28,210 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'asynchscope2'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:51:28,215 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-29 17:51:28,215 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-29 17:51:28,242 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/batch
+2020-05-29 17:51:28,249 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-29 17:51:28,251 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batch-transactionalFlow
+2020-05-29 17:51:28,251 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: batch-transactionalFlow.stage1
+2020-05-29 17:51:28,254 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batch-transactionalBatch
+2020-05-29 17:51:28,339 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-29 17:51:28,348 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: asynchscope2                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-29 17:51:38,836 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - [{ID=025, PLACE=unitedstates, MARITAL_STATUS=single, EDUCATION=highschool, BLOODGROUP=A+}]
+2020-05-29 17:51:38,872 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance f2340540-a1a6-11ea-a76b-f828198890b5 for batch job batch-transactionalBatch
+2020-05-29 17:51:38,872 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2020-05-29 17:51:38,876 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LogerInput: [{ID=025, PLACE=unitedstates, MARITAL_STATUS=single, EDUCATION=highschool, BLOODGROUP=A+}]
+2020-05-29 17:51:38,876 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2020-05-29 17:51:38,938 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance 'f2340540-a1a6-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:51:38,997 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance f2340540-a1a6-11ea-a76b-f828198890b5 of job batch-transactionalBatch. 1 records were loaded
+2020-05-29 17:51:39,014 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Started execution of instance 'f2340540-a1a6-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:51:39,167 [batch-job-batch-transactionalBatch-work-manager.08] INFO  org.mule.api.processor.LoggerMessageProcessor - Inside Batch size is::::::::::::5
+2020-05-29 17:51:39,214 [batch-job-batch-transactionalBatch-work-manager.08] INFO  com.mulesoft.module.batch.DefaultBatchStep - Step Batch_Step finished processing all records for instance f2340540-a1a6-11ea-a76b-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:51:39,214 [batch-job-batch-transactionalBatch-work-manager.08] INFO  org.mule.api.processor.LoggerMessageProcessor - LoggerBatchStep: 1
+2020-05-29 17:51:39,988 [batch-job-batch-transactionalBatch-work-manager.08] INFO  com.mulesoft.module.batch.DefaultBatchStep - Found exception processing record on step 'Batch_Step' for job instance 'f2340540-a1a6-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'.
+This is the first record to show this exception on this step for this job instance. Subsequent records with the same failureswill not be logged for performance and log readability reasons:
+
+********************************************************************************
+Message               : ORA-00913: too many values
+ (java.sql.SQLException).
+Payload               : [{ID=025, PLACE=unitedstates, MARITAL_STATUS=single, EDUCATION=highschool, BLOODGROUP=A+}]
+Payload Type          : com.mulesoft.module.batch.engine.commit.ImmutableRecordWrapperAwareList
+Element               : /batch-transactionalBatch/process-records/0/1/1 @ asynchscope2:asynchscope2.xml:35
+Element XML           : <db:insert config-ref="Oracle_Configuration" doc:name="Database">
+                        <db:parameterized-query>insert into persons (ID,PLACE,MARITAL_STATUS,EDUCATION,BLOODGROUP) values(#[payload.NAME], #[payload.ID], #[payload.PLACE],#[payload.MARITAL_STATUS],#[payload.EDUCATION],#[payload.BLOODGROUP])</db:parameterized-query>
+                        </db:insert>
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.sql.SQLException: ORA-00913: too many values
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:288)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:743)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:216)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForRows(T4CPreparedStatement.java:955)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1169)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3285)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeUpdate(OraclePreparedStatement.java:3368)
+	at org.mule.module.db.internal.domain.autogeneratedkey.NoAutoGeneratedKeyStrategy.executeUpdate(NoAutoGeneratedKeyStrategy.java:55)
+	at org.mule.module.db.internal.domain.executor.UpdateExecutor.doExecuteQuery(UpdateExecutor.java:45)
+	at org.mule.module.db.internal.domain.executor.AbstractSingleQueryExecutor$2.run(AbstractSingleQueryExecutor.java:56)
+	at org.mule.module.db.internal.domain.executor.AbstractSingleQueryExecutor.safely(AbstractSingleQueryExecutor.java:81)
+	at org.mule.module.db.internal.domain.executor.AbstractSingleQueryExecutor.execute(AbstractSingleQueryExecutor.java:50)
+	at org.mule.module.db.internal.processor.UpdateMessageProcessor.doExecuteQuery(UpdateMessageProcessor.java:59)
+	at org.mule.module.db.internal.processor.AbstractSingleQueryDbMessageProcessor.executeQuery(AbstractSingleQueryDbMessageProcessor.java:52)
+	at org.mule.module.db.internal.processor.AbstractDbMessageProcessor.process(AbstractDbMessageProcessor.java:81)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:111)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at com.mulesoft.module.batch.engine.BatchProcessingTemplate.process(BatchProcessingTemplate.java:91)
+	at com.mulesoft.module.batch.engine.buffer.CommitRecordBuffer.doFlush(CommitRecordBuffer.java:85)
+	at com.mulesoft.module.batch.engine.buffer.InMemoryRecordBuffer.flush(InMemoryRecordBuffer.java:91)
+	at com.mulesoft.module.batch.engine.buffer.InMemoryRecordBuffer.flushAndForget(InMemoryRecordBuffer.java:112)
+	at com.mulesoft.module.batch.BatchStepCommit.flush(BatchStepCommit.java:118)
+	at com.mulesoft.module.batch.DefaultBatchStep.flushCommit(DefaultBatchStep.java:373)
+	at com.mulesoft.module.batch.DefaultBatchStep.finishIfCompleted(DefaultBatchStep.java:336)
+	at com.mulesoft.module.batch.engine.threading.BatchRecordWork.run(BatchRecordWork.java:101)
+	at com.mulesoft.module.batch.engine.threading.DefaultBatchWorkManager$3.run(DefaultBatchWorkManager.java:182)
+	at org.mule.work.WorkerContext.run(WorkerContext.java:301)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+********************************************************************************
+
+2020-05-29 17:51:40,050 [pool-45-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance f2340540-a1a6-11ea-a76b-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:51:40,050 [pool-45-thread-1] INFO  org.mule.api.processor.LoggerMessageProcessor - BatchProcessing Completed
+2020-05-29 17:51:40,054 [pool-45-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance f2340540-a1a6-11ea-a76b-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:51:40,054 [pool-45-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+****************************************************************************************************************************************************************
+*             - - + Exception Type + - -             *                  - - + Step + - -                  *                 - - + Count + - -                  *
+****************************************************************************************************************************************************************
+* org.mule.api.MessagingException                    * Batch_Step                                         * 1                                                  *
+****************************************************************************************************************************************************************
+
+2020-05-29 17:51:40,121 [pool-45-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance 'f2340540-a1a6-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'. Total Records processed: 1. Successful records: 0. Failed Records: 1
+2020-05-29 17:53:43,686 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'asynchscope2'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:53:43,687 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: batch-transactionalFlow
+2020-05-29 17:53:43,687 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: batch-transactionalFlow.stage1
+2020-05-29 17:53:43,831 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: batch-transactionalBatch
+2020-05-29 17:53:43,835 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-29 17:53:43,847 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081/batch
+2020-05-29 17:53:43,849 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-29 17:53:43,849 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-29 17:53:43,857 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'asynchscope2'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:53:43,858 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-29 17:53:43,860 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: batch-transactionalFlow
+2020-05-29 17:53:43,861 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: batch-transactionalFlow.stage1
+2020-05-29 17:53:43,861 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: batch-transactionalBatch
+2020-05-29 17:53:43,863 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-29 17:53:43,896 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@34249b1e: startup date [Fri May 29 17:51:27 IST 2020]; root of context hierarchy
+2020-05-29 17:53:43,915 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "asynchscope2" shut down normally on: 29/5/20 5:53 PM  *
+* Up for: 0 days, 0 hours, 2 mins, 15.705 sec                        *
+**********************************************************************
+2020-05-29 17:53:44,009 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'asynchscope2'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:53:44,015 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-29 17:53:44,018 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-29 17:53:44,024 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-29 17:53:44,043 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-29 17:53:44,044 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-29 17:53:44,045 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@3069fb30: startup date [Fri May 29 17:53:44 IST 2020]; root of context hierarchy
+2020-05-29 17:53:44,413 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-29 17:53:44,534 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-tx-log\tx2.log
+2020-05-29 17:53:44,539 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-xa-tx-log\tx2.log
+2020-05-29 17:53:44,548 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-29 17:53:44,551 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batch-transactionalFlow
+2020-05-29 17:53:44,560 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3e3e815d
+2020-05-29 17:53:44,561 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: batch-transactionalFlow.stage1
+2020-05-29 17:53:44,570 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batch-transactionalBatch
+2020-05-29 17:53:44,570 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@426da865
+2020-05-29 17:53:44,596 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\asynchscope2\asynchscope2.xml'}]"
+2020-05-29 17:53:44,596 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\asynchscope2\asynchscope2.xml'}]"
+2020-05-29 17:53:44,601 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'asynchscope2'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-29 17:53:44,602 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-29 17:53:44,609 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-29 17:53:44,630 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/batch
+2020-05-29 17:53:44,637 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-29 17:53:44,645 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batch-transactionalFlow
+2020-05-29 17:53:44,647 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: batch-transactionalFlow.stage1
+2020-05-29 17:53:44,650 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batch-transactionalBatch
+2020-05-29 17:53:44,706 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-29 17:53:44,718 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: asynchscope2                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2020-05-29 17:54:00,100 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - [{ID=025, PLACE=unitedstates, MARITAL_STATUS=single, EDUCATION=highschool, BLOODGROUP=A+}]
+2020-05-29 17:54:00,127 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Created instance 46673240-a1a7-11ea-a76b-f828198890b5 for batch job batch-transactionalBatch
+2020-05-29 17:54:00,127 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting input phase
+2020-05-29 17:54:00,131 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LogerInput: [{ID=025, PLACE=unitedstates, MARITAL_STATUS=single, EDUCATION=highschool, BLOODGROUP=A+}]
+2020-05-29 17:54:00,131 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Input phase completed
+2020-05-29 17:54:00,194 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Starting loading phase for instance '46673240-a1a7-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:54:00,242 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.queue.BatchQueueLoader - Finished loading phase for instance 46673240-a1a7-11ea-a76b-f828198890b5 of job batch-transactionalBatch. 1 records were loaded
+2020-05-29 17:54:00,248 [[asynchscope2].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Started execution of instance '46673240-a1a7-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'
+2020-05-29 17:54:00,424 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - Inside Batch size is::::::::::::5
+2020-05-29 17:54:00,487 [batch-job-batch-transactionalBatch-work-manager.01] INFO  com.mulesoft.module.batch.DefaultBatchStep - Step Batch_Step finished processing all records for instance 46673240-a1a7-11ea-a76b-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:54:00,487 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - LoggerBatchStep: 1
+2020-05-29 17:54:00,995 [batch-job-batch-transactionalBatch-work-manager.01] INFO  org.mule.api.processor.LoggerMessageProcessor - insert success
+2020-05-29 17:54:01,036 [pool-56-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Starting execution of onComplete phase for instance 46673240-a1a7-11ea-a76b-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:54:01,037 [pool-56-thread-1] INFO  org.mule.api.processor.LoggerMessageProcessor - BatchProcessing Completed
+2020-05-29 17:54:01,037 [pool-56-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution of onComplete phase for instance 46673240-a1a7-11ea-a76b-f828198890b5 of job batch-transactionalBatch
+2020-05-29 17:54:01,037 [pool-56-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - 
+
+2020-05-29 17:54:01,125 [pool-56-thread-1] INFO  com.mulesoft.module.batch.engine.DefaultBatchEngine - Finished execution for instance '46673240-a1a7-11ea-a76b-f828198890b5' of job 'batch-transactionalBatch'. Total Records processed: 1. Successful records: 1. Failed Records: 0
+2020-05-30 18:55:57,877 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'asynchscope2'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-30 18:55:57,988 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: batch-transactionalFlow
+2020-05-30 18:55:57,990 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: batch-transactionalFlow.stage1
+2020-05-30 18:55:58,202 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: batch-transactionalBatch
+2020-05-30 18:55:58,220 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2020-05-30 18:55:58,298 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081/batch
+2020-05-30 18:55:58,302 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2020-05-30 18:55:58,302 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2020-05-30 18:55:58,358 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'asynchscope2'                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-30 18:55:58,358 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2020-05-30 18:55:58,382 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: batch-transactionalFlow
+2020-05-30 18:55:58,382 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: batch-transactionalFlow.stage1
+2020-05-30 18:55:58,386 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: batch-transactionalBatch
+2020-05-30 18:55:58,392 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2020-05-30 18:55:58,631 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@3069fb30: startup date [Fri May 29 17:53:44 IST 2020]; root of context hierarchy
+2020-05-30 18:55:58,678 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "asynchscope2" shut down normally on: 30/5/20 6:55 PM  *
+* Up for: 1 days, 1 hours, 2 mins, 14.57 sec                         *
+**********************************************************************
+2020-05-30 18:55:59,259 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'asynchscope2'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-30 18:55:59,284 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.JdkVersionUtils - You're executing with a JDK made by a vendor that is not on the recommended list of vendors. Vendor: AdoptOpenJDK Please consider changing to a recommended JDK vendor.
+2020-05-30 18:55:59,288 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2020-05-30 18:55:59,318 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2020-05-30 18:55:59,342 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2020-05-30 18:55:59,342 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.9)
+2020-05-30 18:55:59,349 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@64ed4f48: startup date [Sat May 30 18:55:59 IST 2020]; root of context hierarchy
+2020-05-30 18:55:59,810 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-05-30 18:56:00,094 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-tx-log\tx2.log
+2020-05-30 18:56:00,097 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-xa-tx-log\tx1.log and F:\R language & git\MulesoftSourceCode\.mule\.\.mule\asynchscope2\queue-xa-tx-log\tx2.log
+2020-05-30 18:56:00,113 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2020-05-30 18:56:00,115 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batch-transactionalFlow
+2020-05-30 18:56:00,117 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6a08f20a
+2020-05-30 18:56:00,129 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: batch-transactionalFlow.stage1
+2020-05-30 18:56:00,130 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: batch-transactionalBatch
+2020-05-30 18:56:00,130 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@542778db
+2020-05-30 18:56:00,208 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\asynchscope2\asynchscope2.xml'}]"
+2020-05-30 18:56:00,208 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='F:\R language & git\MulesoftSourceCode\.mule\apps\asynchscope2\asynchscope2.xml'}]"
+2020-05-30 18:56:00,218 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'asynchscope2'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2020-05-30 18:56:00,265 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2020-05-30 18:56:00,265 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2020-05-30 18:56:00,306 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081/batch
+2020-05-30 18:56:00,309 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2020-05-30 18:56:00,313 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batch-transactionalFlow
+2020-05-30 18:56:00,313 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: batch-transactionalFlow.stage1
+2020-05-30 18:56:00,327 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: batch-transactionalBatch
+2020-05-30 18:56:00,475 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2020-05-30 18:56:00,479 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: asynchscope2                                          *
+* OS encoding: \, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:metadata="http://www.mulesoft.org/schema/mule/metadata" xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:db="http://www.mulesoft.org/schema/mule/db" xmlns:batch="http://www.mulesoft.org/schema/mule/batch" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/batch/current/mule-batch.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration" basePath="/batch"/>
+    <db:oracle-config name="Oracle_Configuration" host="localhost" port="1521" instance="XE" user="system" password="system" doc:name="Oracle Configuration"/>
+
+    <flow name="batch-transactionalFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/BatchTransactional" doc:name="HTTP"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/java
+---
+payload]]></dw:set-payload>
+        </dw:transform-message>
+        <logger message="#[payload]" level="INFO" doc:name="Logger"/>
+        <batch:execute name="batch-transactionalBatch" doc:name="batch-transactionalBatch"/>
+    </flow>
+    <batch:job name="batch-transactionalBatch" max-failed-records="1" block-size="3">
+        <batch:input>
+            <logger message="LogerInput: #[payload]" level="INFO" doc:name="Logger"/>
+        </batch:input>
+        <batch:process-records>
+            <batch:step name="Batch_Step">
+                <logger message="Inside Batch size is::::::::::::#[payload.size()]" level="INFO" doc:name="Logger"/>
+                <batch:commit size="2" doc:name="Batch Commit">
+                    <logger message="LoggerBatchStep: #[payload.size()]" level="INFO" doc:name="Logger"/>
+                    <db:insert config-ref="Oracle_Configuration" doc:name="Database">
+                        <db:parameterized-query><![CDATA[insert into persons (PERSONID, LASTNAME, FIRSTNAME,ADDRESS,CITY) values(#[payload.PERSONID], #[payload.LASTNAME], #[payload.FIRSTNAME],#[payload.ADDRESS],#[payload.CITY])]]></db:parameterized-query>
+                    </db:insert>
+                    <logger message="insert success" level="INFO" doc:name="Logger"/>
+
+                </batch:commit>
+            </batch:step>
+        </batch:process-records>
+        <batch:on-complete>
+            <logger message="BatchProcessing Completed" level="INFO" doc:name="Logger"/>
+        </batch:on-complete>
+    </batch:job>
+</mule>
