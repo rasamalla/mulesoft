@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ms-aichain="http://www.mulesoft.org/schema/mule/ms-aichain" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ms-aichain http://www.mulesoft.org/schema/mule/ms-aichain/current/mule-ms-aichain.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="c7c8922f-39ed-43b8-bde2-aea4a0896ba5" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<ms-aichain:config name="MuleSoft_AI_Chain_Config" llmType="OPENAI" configType="Configuration Json" modelName="gpt-4o-mini" doc:name="MuleSoft AI Chain Config" doc:id="9133421c-d538-4985-ac77-02b0ec959c03" filePath='#[mule.home ++ "/apps/" ++ app.name ++ "/enVars.json"]' />
+	<flow name="poc-ai-connectFlow" doc:id="7f880ac8-5b0d-4519-b5a1-a0b03e360936" >
+		<http:listener doc:name="Listener" doc:id="0e413c3b-a052-4eb0-a396-f8540e631923" config-ref="HTTP_Listener_config" path="/ai"/>
+		<ms-aichain:chat-answer-prompt doc:name="Chat answer prompt" doc:id="e4ded313-6e99-4fe6-9871-2142bbce6117" config-ref="MuleSoft_AI_Chain_Config">
+			<ms-aichain:prompt ><![CDATA[#[payload.data]]]></ms-aichain:prompt>
+		</ms-aichain:chat-answer-prompt>
+	</flow>
+</mule>
